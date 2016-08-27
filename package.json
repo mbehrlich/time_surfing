@@ -1,0 +1,29 @@
+{
+  "name": "time_surfing",
+  "version": "1.0.0",
+  "description": "== Time Surfing",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "engines": {
+    "node": "4.4.3",
+    "npm": "2.15.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbehrlich/time_surfing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbehrlich/time_surfing/issues"
+  },
+  "homepage": "https://github.com/mbehrlich/time_surfing#readme"
+}
