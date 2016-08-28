@@ -18,9 +18,9 @@ navigation, adequate seed data and sufficient CSS styling:
 
 == Design Docs
 
-* {View Wireframes}[./docs/wireframes]
-* {React Components}[./docs/component-hierarchy.md]
-* {API endpoints}[./docs/api-endpoints.md]
-* {DB schema}[./docs/schema.md]
-* {Redux Structure}[./docs/redux-structure.md]
-* {Sample State}[./docs/sample-state.md]
+* {View Wireframes}[link:docs/wireframes]
+* {React Components}[link:docs/component-hierarchy.md]
+* {API endpoints}[link:docs/api-endpoints.md]
+* {DB schema}[link:docs/schema.md]
+* {Redux Structure}[link:docs/redux-structure.md]
+* {Sample State}[link:docs/sample-state.md]
