@@ -1,6 +1,6 @@
 == Time Surfing
 
-# Minimum Viable Product
+= Minimum Viable Product
 
 Timesurfing is an app inspired by couchsurfing, a site that connects hosts and
 travelers, so that travelers can stay for free on their couches. Timesurfing
@@ -16,7 +16,7 @@ navigation, adequate seed data and sufficient CSS styling:
 * Reviews (referred to as references)
 * Production README
 
-# Design Docs
+= Design Docs
 
 * View Wireframes
 * React Components
