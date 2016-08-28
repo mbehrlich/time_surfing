@@ -47,18 +47,19 @@
               + dispatch: cancelGuest
   - LocationSearchContainer
     + LocationSearch
-      * props: users, current_era, loading
+      * props: sites, current_era, loading
       * dispatch: locationSearch, changeEra
       * LocationSearchForm
         - props: current_era
         - dispatch: locationSearch
       * SearchResultsIndex
-        - props: users
+        - props: sites
         - SearchResult
-          + props: user
+          + props: site
+          + dispatch: requestHost
       * Map
-        - props: users
-        - dispatch: locationSearch
+        - props: sites
+        - dispatch: locationSearch, requestHost
   - MemberSearchContainer (BONUS)
     + MemberSearch
       * props: users, loading
@@ -106,7 +107,7 @@
           + props: user
   - UpdateProfileContainer
     + UpdateProfile
-    + props: user, loading, editing
+    + props: current_user, loading
     + dispatch: requestUser, changeProfilePic(BONUS), updateUser(BONUS)
     + UpdateUser (BONUS)
       * props: current_user, loading, updateUser
