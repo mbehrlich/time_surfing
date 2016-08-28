@@ -4,7 +4,7 @@
   - NavbarContainer
     + Navbar
       * props: current_user, current_era
-      * dispatch: guestLogin, requestCurrentUser
+      * dispatch: guestLogin, requestCurrentUser, logoutUser
       * JoinContainer
         - Join
         - props: current_user
