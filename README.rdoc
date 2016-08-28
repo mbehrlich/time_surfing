@@ -1,5 +1,26 @@
 == Time Surfing
 
-asdf
+### Minimum Viable Product
 
-* Ruby version
+Timesurfing is an app inspired by couchsurfing, a site that connects hosts and
+travelers, so that travelers can stay for free on their couches. Timesurfing
+does the same thing, but for time travelers. By the end of Week 9, this app
+will, at a minimum, satisfy the following criteria with smooth, bug-free
+navigation, adequate seed data and sufficient CSS styling:
+
+ * Hosting on Heroku
+ * New account creation, login, and guest/demo login
+ * Spots (Places to couchsurf)
+ * Bookings
+ * Spots search (by location & availability) & Google Maps on search
+ * Reviews (referred to as references)
+ * Production README
+
+###Design Docs
+
+* View Wireframes
+* React Components
+* API endpoints
+* DB schema
+* Redux Structure
+* Sample State
