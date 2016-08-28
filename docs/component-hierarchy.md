@@ -104,21 +104,21 @@
         - dispatch: requestFriends
         - Friend
           + props: user
-  - EditProfileContainer
-    + EditProfile
-    + props: user, loading
+  - UpdateProfileContainer
+    + UpdateProfile
+    + props: user, loading, editing
     + dispatch: requestUser, changeProfilePic(BONUS), updateUser(BONUS)
-    + AboutUser (BONUS)
+    + UpdateUser (BONUS)
       * props: current_user, loading, updateUser
-    + AboutSiteContainer
-      * AboutSite
+    + UpdateSiteContainer
+      * UpdateSite
         - props: current_user, site, loading
         - dispatch: requestSite, updateSite, removeSite
-    + Photos (BONUS)
+    + UpdatePhotos (BONUS)
       * props: current_user, loading
       * dispatch: addPic, removePic
-    + FriendsContainer (BONUS)
-      * FriendsIndex
+    + UpdateFriendsContainer (BONUS)
+      * UpdateFriendsIndex
         - props: current_user, users, loading
         - dispatch: requestFriends, removeFriend
         - Friend
@@ -141,4 +141,28 @@
 
 |Path|Component|
 |----|---------|
-|"asdf"|"asdf"|
+|"/"|"Splash"|
+|"/login"|"LoginContainer"|
+|"/join"|"JoinContainer"|
+|"/dashboard"|"Dashboard"|
+|"/dashboard/acceptguests"|"AcceptGuestContainer"|
+|"/locationsearch"|"LocationSearchContainer"|
+|"/membersearch"|"MemberSearchContainer"|
+|"/users/:id"|"ProfileContainer"|
+|"/users/:id/sendrequest"|"SendRequestContainer"|
+|"/users/:id/sendmessage"|"SendMessage"|
+|"/users/:id/ensurefriendrequest"|"EnsureAddFriend"|
+|"/users/:id/writereference"|"WriteReference"|
+|"/users/:id/site"|"AboutSiteContainer"|
+|"/users/:id/photos"|"Photos"|
+|"/users/:id/"|"ReferencesContainer"|
+|"/users/:id/friends"|"FriendsContainer"|
+|"/editprofile/"|"UpdateProfileContainer"|
+|"/editprofile/site"|"UpdateSiteContainer"|
+|"/editprofile/photos"|"UpdatePhotos"|
+|"/editprofile/friends"|"UpdateFriendsContainer"|
+|"/inbox"|"InboxContainer"|
+|"/inbox/:message_id"|"Message"|
+|"/about"|"AboutIndex"|
+|"/about/safety"|"Safety"|
+|"/about/howitworks"|"HowItWorks"|
