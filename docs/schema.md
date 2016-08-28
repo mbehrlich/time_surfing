@@ -1,70 +1,70 @@
 **users**
-  - id
-  - user_name
-  - first_name
-  - last_name
-  - profilePic
-  - age
-  - gender
-  - description
+  - id: integer: primary
+  - user_name: string: not null, unique
+  - first_name: string: not null
+  - last_name: string: not null
+  - profilePic: string
+  - birthdate: date
+  - gender: string: "M, F, or O"
+  - description: text
 
   has_many :photos, :bookings, :references, :messages, :friendships
   has_one :site
 
 **photos**
-  -id
-  -user_id
-  -url
+  - id: integer: primary
+  - user_id: integer: not null
+  - url: string: not null
 
   belongs_to :user
 
 **sites**
-  -id
-  -user_id
-  -address
-  -city
-  -country
-  -start_date
-  -end_date
-  -max_guests
-  -preferred_gender
-  -kid_friendly
-  -pet_friendly
-  -description
+  - id: integer: primary
+  - user_id: integer, not null
+  - address: string, not null
+  - city: string, not null
+  - country: string, not null
+  - start_date: date, not null
+  - end_date: date, not null
+  - max_guests: integer: not null, > 0
+  - preferred_gender: "M, F, or A"
+  - kid_friendly: boolean, default: false
+  - pet_friendly: boolean, default: false
+  - description: text
 
   has_many :guests
   belongs_to :user
 
 **bookings**
-  -id
-  -guest_id
-  -site_id
-  -start_date
-  -end_date
+  - id: integer: primary
+  - guest_id: integer: not null
+  - site_id: integer: not null
+  - start_date: date: not null
+  - end_date: date: not null
 
   belongs_to :site, :user
 
 **references**
-  -id
-  -reviewer_id
-  -reviewed_id
-  -recommended
-  -body
+  - id: integer: primary
+  - reviewer_id: integer: not null
+  - reviewed_id: integer: not null
+  - recommended: boolean: not null
+  - body: text: not null
 
   belongs_to :reviewer, :reviewed
 
 **friendships**
-  -id
-  -userA_id
-  -userB_id
-  -accepted
+  - id: integer: primary
+  - userA_id: integer: not null
+  - userB_id: integer: not null
+  - accepted: boolean, default: false
 
   belongs_to :userA, :userB
 
 **messages**
-  -id
-  -author_id
-  -recipient_id
-  -body
+  - id: integer: primary
+  - author_id: integer: not null
+  - recipient_id: integer: not null
+  - body: text: not null
 
   belongs_to :recipient, author
