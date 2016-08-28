@@ -1,5 +1,7 @@
 = Time Surfing
 
+{Timesurfing.us}[www.timesurfing.us]
+
 == Minimum Viable Product
 
 Timesurfing is an app inspired by couchsurfing, a site that connects hosts and
