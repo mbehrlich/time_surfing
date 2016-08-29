@@ -26,3 +26,16 @@ navigation, adequate seed data and sufficient CSS styling:
 * {DB schema}[link:docs/schema.md]
 * {Redux Structure}[link:docs/redux-structure.md]
 * {Sample State}[link:docs/sample-state.md]
+
+== Implementation Timeline
+
+* {Phase 1}[link:docs/phases/phase1.md]: Authentication, Splash Page, and Dashboard
+* {Phase 2}[link:docs/phases/phase2.md]: Accept Guests(create site), create bookings, basic user profile page
+* {Phase 3}[link:docs/phases/phase3.md]: Location Search, google maps api
+* {Phase 4}[link:docs/phases/phase4.md]: References
+* {Phase 5}[link:docs/phases/phase5.md]: Testing, final stylization, production readme,
+* {BONUS Phase 6}[link:docs/phases/phase6.md]: updated user profile page, photos
+* {BONUS Phase 7}[link:docs/phases/phase7.md]: About page, more time travel specification
+* {BONUS Phase 8}[link:docs/phases/phase8.md]: Member search
+* {BONUS Phase 9}[link:docs/phases/phase9.md]: Messages
+* {BONUS Phase 10}[link:docs/phases/phase10.md]: Friendships

@@ -1,0 +1,31 @@
+## Phase 2: Accept Guests(create site), create bookings, basic user profile page
+### 2 days: Week 1, Thursday and Friday
+
+- [ ] sites model
+- [ ] sites api routes
+- [ ] sites controller
+- [ ] sites json builders
+- [ ] accept guests component
+- [ ] about site component
+- [ ] style components
+- [ ] redux cycle - utils for sites
+- [ ] redux cycle - actions for sites
+- [ ] redux cycle - middleware for sites
+- [ ] redux cycle - reducers for sites
+- [ ] profile component
+- [ ] style profile
+- [ ] basic seed sites
+- [ ] bookings model
+- [ ] bookings api routes
+- [ ] bookings controller
+- [ ] bookings json builders   
+- [ ] add request component
+- [ ] bookings and guest components
+- [ ] style components
+- [ ] redux cycle - utils for bookings
+- [ ] redux cycle - actions for bookings
+- [ ] redux cycle - middleware for bookings
+- [ ] redux cycle - reducers for bookings
+- [ ] Update Dashboard bookings and guests components
+- [ ] style components
+- [ ] basic seed bookings

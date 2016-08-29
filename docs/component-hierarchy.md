@@ -4,7 +4,7 @@
   - NavbarContainer
     + Navbar
       * props: current_user, current_era
-      * dispatch: guestLogin, requestCurrentUser, logoutUser
+      * dispatch: guestLogin, logoutUser
       * JoinContainer
         - Join
         - props: current_user
@@ -12,7 +12,7 @@
       * LoginContainer
         - Login
         - props: current_user
-        - dispatch: loginUser, guestLogin
+        - dispatch: requestLogin, guestLogin
   - Splash
     - props: current_era
     - dispatch: changeEra (BONUS)
@@ -20,7 +20,7 @@
     + UserInfoContainer
       * UserInfo
         - props: current_user
-        - dispatch: removeSite
+        - dispatch: deleteSite
       * AcceptGuestContainer
         - AcceptGuest
           + props: site
@@ -95,6 +95,8 @@
         - dispatch: requestSite
     + Photos (BONUS)
       * props: user, loading
+      * Photo
+        -props: photo
     + ReferencesContainer
       * References
         - props: references, loading
@@ -108,7 +110,7 @@
   - UpdateProfileContainer
     + UpdateProfile
     + props: current_user, loading
-    + dispatch: requestUser, changeProfilePic(BONUS), updateUser(BONUS)
+    + dispatch: requestUser, changeProfilePic(BONUS), updateUser(BONUS), deleteUser
     + UpdateUser (BONUS)
       * props: current_user, loading, updateUser
     + UpdateSiteContainer
@@ -156,6 +158,7 @@
 |"/users/:id/writereference"|"WriteReference"|
 |"/users/:id/site"|"AboutSiteContainer"|
 |"/users/:id/photos"|"Photos"|
+|"/users/:id/photos/photo_id"|"Photo"|
 |"/users/:id/"|"ReferencesContainer"|
 |"/users/:id/friends"|"FriendsContainer"|
 |"/editprofile/"|"UpdateProfileContainer"|

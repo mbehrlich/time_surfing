@@ -13,6 +13,12 @@
 - PATCH "/api/users/:id" - edit user info
 - DELETE "/api/users/:id" - delete user
 
+**pics** (BONUS)
+- POST "/api/photos/:user_id" - add a photo
+- GET "/api/photos/:user_id" - look at photos
+- GET "/api/photo/:id" - look at a photo
+- DELETE "/api/photo" - remove a photo
+
 **sessions**
 - POST "/api/session" - login
 - DELETE "/api/session" - logout
