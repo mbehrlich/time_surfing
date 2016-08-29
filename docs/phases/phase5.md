@@ -4,4 +4,5 @@
 - [ ] Lots of engaging seed data
 - [ ] Testing
 - [ ] Final stylization
-- [ ] Production readme 
+- [ ] Implement favicon and logo
+- [ ] Production readme

@@ -34,8 +34,8 @@ navigation, adequate seed data and sufficient CSS styling:
 * {Phase 3}[link:docs/phases/phase3.md]: Location Search, google maps api
 * {Phase 4}[link:docs/phases/phase4.md]: References
 * {Phase 5}[link:docs/phases/phase5.md]: Testing, final stylization, production readme,
-* {BONUS Phase 6}[link:docs/phases/phase6.md]: updated user profile page, photos
-* {BONUS Phase 7}[link:docs/phases/phase7.md]: About page, more time travel specification
-* {BONUS Phase 8}[link:docs/phases/phase8.md]: Member search
-* {BONUS Phase 9}[link:docs/phases/phase9.md]: Messages
-* {BONUS Phase 10}[link:docs/phases/phase10.md]: Friendships
+* {BONUS Phase 6}[link:docs/phases/phase6bonus.md]: updated user profile page, photos
+* {BONUS Phase 7}[link:docs/phases/phase7bonus.md]: About page, more time travel specification
+* {BONUS Phase 8}[link:docs/phases/xtra_bonus.md]: Member search
+* {BONUS Phase 9}[link:docs/phases/xtra_bonus.md]: Messages
+* {BONUS Phase 10}[link:docs/phases/xtra_bonus.md]: Friendships
