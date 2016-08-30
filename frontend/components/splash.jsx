@@ -1,9 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
-const Splash = () => (
-  <div>
-    <h1>Timesurfing</h1>
-  </div>
+const Splash = ({children}) => (
+  <main className="container">
+    <header className="header">
+      <h1>Timesurfing</h1>
+    </header>
+    {children}
+  </main>
+
 );
 
-export default Splash;
+export default withRouter(Splash);

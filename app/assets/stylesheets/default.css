@@ -16,6 +16,7 @@ body {
 .navbar {
   margin: 0 auto;
   max-width: 900px;
+  width: 100%
   position: relative;
 }
 
@@ -50,5 +51,92 @@ body {
 }
 
 .nav-buttons li button:active {
+  background-color: #afb8c3;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 66px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.overlay {
+  opacity: .25;
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.auth-form {
+  width: 33%;
+  min-width: 300px;
+  opacity: 1;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  border: 1px solid #aeb5ba;
+  border-radius: 5%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 1px;
+}
+
+.auth {
+  padding: 15px;
+}
+
+.auth label {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+
+.auth input {
+  display: block;
+  width: 100%;
+  border: 1px solid #aeb5ba;
+  border-radius: 5px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  color: #929ead;
+  background-color: #ecf0f1;
+}
+
+.auth input:focus {
+  border: 1px solid #287fb8;
+}
+
+.cancel {
+  float: right;
+  padding: 5px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+.auth-button {
+  padding: 5px 10px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #afb8c3;
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+}
+
+.auth-button:hover {
+  border: 2px solid #afb8c3;
+  padding: 4px 9px;
+  background-color: #f2f2f2
+}
+
+.auth-button:active {
   background-color: #afb8c3;
 }

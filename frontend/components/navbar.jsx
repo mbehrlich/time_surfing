@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 const Navbar = ({currentUser}) => {
   let logged_in = (currentUser ? true : false);
@@ -12,8 +13,9 @@ const Navbar = ({currentUser}) => {
   } else {
     navButtons = (
       <ul className="nav-buttons">
-        <li><button>Join</button></li>
-        <li><button>Log in</button></li>
+        <li><a href="/#/join"><button>Join</button></a></li>
+        <li><a href="/#/login"><button>Log in</button></a></li>
+        <li><button>Guest</button></li>
       </ul>
     );
   }
@@ -27,4 +29,4 @@ const Navbar = ({currentUser}) => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
