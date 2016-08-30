@@ -13,9 +13,11 @@
 
 **photos** BONUS
   - id: integer: primary
-  - user_id: integer: not null
+  - photoable_id: integer: not null
+  - photoable_type: string: not null
   - url: string: not null
 
+  Polymorphic
   belongs_to :user
 
 **sites**

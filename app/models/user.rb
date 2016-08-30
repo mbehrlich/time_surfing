@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates :username, :password_digest, :session_token, :firstname, :lastname, presence: true
   validates :username, :session_token, uniqueness: true
   validates :password, length: { minimum: 8, allow_nil: true }
+  validates :gender, inclusion: { in: ["M", "F", "O", nil]}
 
   def password=(password)
     @password = password
