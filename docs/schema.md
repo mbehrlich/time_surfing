@@ -11,7 +11,7 @@
   has_many :photos, :bookings, :references, :messages, :friendships
   has_one :site
 
-**photos**
+**photos** BONUS
   - id: integer: primary
   - user_id: integer: not null
   - url: string: not null
@@ -53,7 +53,7 @@
 
   belongs_to :reviewer, :reviewed
 
-**friendships**
+**friendships** BONUS
   - id: integer: primary
   - userA_id: integer: not null
   - userB_id: integer: not null
@@ -61,7 +61,7 @@
 
   belongs_to :userA, :userB
 
-**messages**
+**messages** BONUS
   - id: integer: primary
   - author_id: integer: not null
   - recipient_id: integer: not null

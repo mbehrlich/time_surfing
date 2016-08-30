@@ -1,9 +1,9 @@
-## Bonus phase 6: updated user profile page, photos
+## phase 6: updated user profile page, photos
 ### 1 day: week 2, Wednesday
 
 - [ ] Implement profile pics
 - [ ] Create photo model
-- [ ] Create photo routes
+- [ ] Create phodto routes
 - [ ] Create photo controller
 - [ ] Create photo views in jbuilder
 - [ ] Create add photo component
