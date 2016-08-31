@@ -291,9 +291,8 @@ h5 {
   background-color: white;
 }
 
-  .auth input:focus {
-    border: 1px solid #287fb8;
-  }
+.front-search:focus {
+  border: 1px solid #287fb8;
 }
 
 /*testimonials */
@@ -378,8 +377,8 @@ h5 {
 }
 
 .testimonial-symbol {
-  text-align: center !important;
-  margin: 0 auto !important;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .testimonial-users {
