@@ -151,11 +151,23 @@ body {
 }
 
 h1 {
+  font-size: 50px;
+}
+
+h2 {
   font-size: 44px;
 }
 
 h3 {
   font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 12px;
 }
 
 .block-navbar {
@@ -181,9 +193,9 @@ h3 {
   margin: 0 auto;
   z-index: 2;
   position: fixed;
-  top: 200px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   border: 1px solid #aeb5ba;
   border-radius: 5%;
   background-color: white;
@@ -264,5 +276,143 @@ h3 {
 }
 
 .header h3 {
+  text-align: center;
+}
+
+.front-search {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #aeb5ba;
+  border-radius: 5px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  color: #929ead;
+  background-color: white;
+}
+
+  .auth input:focus {
+    border: 1px solid #287fb8;
+  }
+}
+
+/*testimonials */
+
+.testimonials {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testimonial {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+  align-items: center;
+}
+
+.figure {
+  width: 70%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.figure-left {
+  background-image: url(/assets/rome.jpg);
+}
+
+.figure-right {
+  background-image: url(/assets/brunner.jpg);
+}
+
+.testimonial-caption {
+  color: white;
+  margin-left: 25%;
+  margin-top: 30%;
+}
+
+.testimonial-caption h2 {
+  font-size: 44px;
+}
+
+.testimonial-caption button {
+  padding: 5px 10px;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #afb8c3;
+  border-radius: 5px;
+  background-color: #287fb8;
+  width: 150px;
+  text-align: center;
+  color: #7BCCB5;
+}
+
+.testimonial-caption button:hover {
+  border: 2px solid #afb8c3;
+  padding: 4px 9px;
+  background-color: #2371a3;
+}
+
+.testimonial-caption button:active {
+  background-color: #7D0552;
+}
+
+.testimonial-aside {
+  width: 30%;
+  padding: 30px;
+  background-color: white;
+  box-sizing: border-box;
+  height: 600px;
+  display: inline-block;
+}
+
+.testimonial-aside h5 {
+  text-align: center;
+}
+
+.testimonial-symbol {
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+.testimonial-users {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.testimonial-user1 {
+  float: left;
+}
+
+.testimonial-user2 {
+  float: right;
+}
+
+.testimonial-user img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.testimonial-location {
+  text-align: center;
+}
+
+.testimonial-line {
+  margin: 20px auto;
+  background-color: black;
+  width: 80px;
+  height: 2px;
+}
+
+.testimonial-description {
   text-align: center;
 }
