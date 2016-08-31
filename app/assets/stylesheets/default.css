@@ -151,7 +151,15 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.block-navbar {
+  height: 68px;
 }
 
 /*auth*/
@@ -172,7 +180,10 @@ h1 {
   opacity: 1;
   margin: 0 auto;
   z-index: 2;
-  position: relative;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #aeb5ba;
   border-radius: 5%;
   background-color: white;
@@ -230,4 +241,28 @@ h1 {
 
 .auth-button:active {
   background-color: #afb8c3;
+}
+
+/*splash*/
+
+.background {
+  background-image: url(/assets/time2.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.header h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header h3 {
+  text-align: center;
 }
