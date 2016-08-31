@@ -37,8 +37,8 @@ class Join extends React.Component {
   }
 
   render() {
-    let errors = this.props.errors.map((error) => (
-      <li>{error}</li>
+    let errors = this.props.errors.map((error, idx) => (
+      <li key={idx}><i className="material-icons">warning</i> {error}</li>
     ));
     return (
       <div>
@@ -72,7 +72,7 @@ class Join extends React.Component {
             </label>
             <button className="auth-button">Join</button>
           </form>
-          <button className="auth-button">Guest Login</button>
+          <button className="auth-button" onClick={this.props.loginUser}>Guest Login</button>
         </section>
       </div>
     );

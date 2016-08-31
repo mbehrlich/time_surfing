@@ -5,6 +5,8 @@ body {
   color: #27374c;
 }
 
+/*Navbar*/
+
 .nav-container {
   position: fixed;
   background-color: white;
@@ -26,12 +28,18 @@ body {
   padding: 15px;
 }
 
+.logo-icon {
+  position: relative;
+  top: 4px;
+}
+
 .nav-buttons {
   float: right;
 }
 
 .nav-buttons li {
   float: left;
+  margin-left: 15px;
 }
 
 .nav-buttons li button {
@@ -53,6 +61,35 @@ body {
 .nav-buttons li button:active {
   background-color: #afb8c3;
 }
+
+.user-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 14px;
+  /*border: 1px solid black;*/
+  border-radius: 100%;
+  /*vertical-align: -13px;*/
+  /*line-height: 60px;*/
+  float: left;
+}
+
+/*.user-icon:after {
+  content: '\e60b';
+  display: inline-block;
+}*/
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.navbar-dropdown {
+  display: none;
+}
+
+/*Body*/
 
 .container {
   max-width: 900px;

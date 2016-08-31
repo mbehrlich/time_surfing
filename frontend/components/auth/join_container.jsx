@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Join from './join';
-import { createUser } from '../../actions/session_actions';
+import { createUser, loginUser } from '../../actions/session_actions';
 
 
 const mapStateToProps = (state) => ({
@@ -10,7 +10,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  createUser: (user) => dispatch(createUser(user))
+  createUser: (user) => dispatch(createUser(user)),
+  loginUser: () => dispatch(loginUser({username: "Marty", password: "12345678"}))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Join);

@@ -5,7 +5,6 @@ import { receiveUser, receiveErrors } from '../actions/session_actions';
 const SessionMiddleware = ({getState, dispatch}) => next => action => {
   let success = (user) => dispatch(receiveUser(user));
   let error = (errors) => {
-    console.log(errors);
     dispatch(receiveErrors(errors.responseJSON))
   };
   switch (action.type) {
