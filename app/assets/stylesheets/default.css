@@ -40,6 +40,7 @@ body {
 .nav-buttons li {
   float: left;
   margin-left: 15px;
+  position: relative;
 }
 
 .nav-buttons li button {
@@ -67,17 +68,23 @@ body {
   width: 40px;
   height: 40px;
   margin-top: 14px;
-  /*border: 1px solid black;*/
+
   border-radius: 100%;
-  /*vertical-align: -13px;*/
-  /*line-height: 60px;*/
+
   float: left;
+  position: relative;
 }
 
-/*.user-icon:after {
-  content: '\e60b';
-  display: inline-block;
-}*/
+.arrow {
+
+  position: absolute;
+  left: 30px;
+  bottom: -10px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
 
 .user-icon img {
   width: 100%;
@@ -85,8 +92,53 @@ body {
   border-radius: 100%;
 }
 
+.user-icon img:hover {
+  -webkit-filter: brightness(75%);
+}
+
 .navbar-dropdown {
+  position: absolute;
+  border-top: 1px solid #afb8c3;
+  border-left: 1px solid #afb8c3;
+  border-right: 1px solid #afb8c3;
+  background-color: white;
+  width: 150px;
+  top: 60px;
+  right: 0px;
+  box-sizing: border-box;
+}
+
+.navbar-dropdown li {
+  margin: 0;
+  border-bottom: 1px solid #afb8c3;
+  /*padding: 0;*/
+  width: 100%;
+  display: block;
+}
+
+.navbar-dropdown li a {
+  padding: 5px 0 5px 10px;
+  display: block;
+  width: 100%;
+}
+
+.navbar-dropdown li:hover {
+  /*border: 1px solid #afb8c3;*/
+
+  /*padding: 4px 19px;*/
+  background-color: #f2f2f2;
+}
+
+.navbar-dropdown li:active {
+  background-color: #afb8c3;
+}
+
+.not-popup {
   display: none;
+}
+
+.popup {
+  display: block;
 }
 
 /*Body*/
@@ -101,6 +153,8 @@ body {
 h1 {
   font-size: 36px;
 }
+
+/*auth*/
 
 .overlay {
   opacity: .25;
