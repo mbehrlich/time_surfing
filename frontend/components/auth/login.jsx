@@ -1,4 +1,5 @@
 import React from 'react';
+import { hashHistory } from 'react-router';
 
 class Login extends React.Component {
   constructor(props) {
@@ -16,8 +17,8 @@ class Login extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.props.logged_in){
-      this.props.router.push("/#/")
+    if (this.props.loggedIn){
+      hashHistory.push("/")
     }
   }
 
@@ -30,7 +31,7 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.loginUser();
+    this.props.loginUser(this.state);
   }
 
   render() {

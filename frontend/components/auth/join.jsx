@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+import { hashHistory, withRouter } from 'react-router';
 
 class Join extends React.Component {
   constructor(props) {
@@ -19,8 +19,8 @@ class Join extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.props.logged_in){
-      this.props.router.push("/#/")
+    if (this.props.loggedIn){
+      hashHistory.push("/");
     }
   }
 
@@ -33,7 +33,7 @@ class Join extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createUser();
+    this.props.createUser(this.state);
   }
 
   render() {

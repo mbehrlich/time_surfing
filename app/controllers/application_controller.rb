@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
 
   def ensure_not_logged_in
     if current_user
-      render json: ["Already logged in"]
+      render json: ["Already logged in"], status: 403
     end
   end
 

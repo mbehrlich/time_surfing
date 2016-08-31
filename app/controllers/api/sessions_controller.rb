@@ -6,7 +6,7 @@ class Api::SessionsController < ApplicationController
   def create
     @user = User.find_by_credentials(session_params[:username], session_params[:password])
     if @user.class == String
-      render json: @user
+      render json: @user, status: 401
     else
       login(@user)
       render :show

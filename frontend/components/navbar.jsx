@@ -1,13 +1,14 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-const Navbar = ({currentUser}) => {
+const Navbar = ({currentUser, logoutUser }) => {
   let logged_in = (currentUser ? true : false);
   let navButtons;
   if (logged_in) {
     navButtons = (
       <ul className="nav-buttons">
-        <li>Option 1</li>
+        <li><button onClick={logoutUser} >Log out</button></li>
+        <li>{currentUser.username}</li>
       </ul>
     );
   } else {

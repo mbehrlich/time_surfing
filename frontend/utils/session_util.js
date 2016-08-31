@@ -17,3 +17,12 @@ export const loginUser = (user, success, error) => {
     error
   });
 };
+
+export const logoutUser = (success, error) => {
+  $.ajax({
+    url: "api/session",
+    method: "DELETE",
+    success,
+    error
+  });
+};
