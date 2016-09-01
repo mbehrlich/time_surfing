@@ -1,12 +1,24 @@
 import React from 'react';
 
-const About = ({user}) => (
-  <div className="inner-info">
-    <p className="data-point"><strong>Name:</strong> {user.firstname} {user.lastname}</p>
-    <p className="data-point"><strong>Gender:</strong> {user.gender}</p>
-    <p className="data-point"><strong>Birthday:</strong> {user.birthdate}</p>
-    <p className="about-me">{user.description}</p>
-  </div>
-);
+class About extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+
+
+  render() {
+    return (
+      <div className="inner-info">
+        <p className="data-point"><strong>Name:</strong> {this.props.user.firstname} {this.props.user.lastname}</p>
+        <p className="data-point"><strong>Gender:</strong> {this.props.user.gender}</p>
+        <p className="data-point"><strong>Age:</strong> {this.props.age}</p>
+        <p className="data-point"><strong>Birthday:</strong> {this.props.user.birthdate}</p>
+        <p className="about-me">{this.props.user.description}</p>
+      </div>
+    );
+  }
+
+}
 
 export default About;
