@@ -6,6 +6,7 @@ class Api::UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
+    @site = @user.site
     unless @user
       render json: ["User has been erased from history"], status: 404
     end
@@ -15,6 +16,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login(@user)
+      @site = Site.create({user_id: @user.id});
       render :show
     else
       @errors = @user.errors.full_messages

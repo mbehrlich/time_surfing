@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     resources :users, only: [:create, :show, :update, :destroy]
-    resources :sites, only: [:show, :update]
+    resources :sites, only: [:update]
     get "location", to: "sites#location"
     resource :session, only: [:create, :destroy]
   end

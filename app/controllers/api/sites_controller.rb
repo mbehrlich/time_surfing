@@ -2,10 +2,15 @@ class Api::SitesController < ApplicationController
 
   before_action :ensure_correct_user, only: [:update]
 
-  def show
-  end
-
   def update
+    @site = Site.find_by(id: params[:id])
+    if @site.update(site_params)
+      @user = @site.user
+      render :show
+    else
+      @errors = @site.errors.full_messages
+      render json: @errors, status: 422
+    end
   end
 
   def location
