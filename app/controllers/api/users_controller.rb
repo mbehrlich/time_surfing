@@ -6,6 +6,9 @@ class Api::UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
+    unless @user
+      render json: ["User has been erased from history"], status: 404
+    end
   end
 
   def create

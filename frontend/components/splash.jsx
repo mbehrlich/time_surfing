@@ -11,7 +11,8 @@ const Splash = ({children}) => (
           <h1 className="main-title">Stay with Locals and Meet Time Travelers</h1>
           <h3 className="secondary-title">Share authentic Time Travel Experiences</h3>
           <form>
-            <input type="text" className="front-search" />
+            <input type="text" className="front-search" placeholder="Where do you want to go?"/>
+
           </form>
         </header>
       </main>
@@ -49,8 +50,9 @@ const Splash = ({children}) => (
       <article className="testimonial2 testimonial  group">
         <aside className="testimonial-aside">
           <h5>connected with</h5>
-          <i className="material-icons">hourglass_empty</i>
-          <section className="testimonial-users group">
+            <div className="testimonial-symbol">
+              <i className="material-icons">hourglass_empty</i>
+            </div>          <section className="testimonial-users group">
             <figure className="testimonial-user1 testimonial-user">
               <img src="assets/Bill.jpg" />
               <figcaption>Bill</figcaption>

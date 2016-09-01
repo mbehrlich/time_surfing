@@ -17,7 +17,7 @@ body {
 
 .navbar {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1100px;
   width: 100%;
   position: relative;
 }
@@ -144,7 +144,7 @@ body {
 /*Body*/
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding-top: 66px;
@@ -414,4 +414,50 @@ h5 {
 
 .testimonial-description {
   text-align: center;
+}
+
+/*footer*/
+
+.footer {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  background-color: white;
+  font-size: 18px;
+}
+
+.footer-list {
+  text-align: center;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin: 20px 40px;
+}
+
+.footer p {
+  text-align: center;
+  padding: 50px;
+  font-size: 12px;
+}
+
+/*other*/
+
+.errors {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
 }
