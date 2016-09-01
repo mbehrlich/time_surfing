@@ -248,7 +248,7 @@ h5 {
 .auth-button:hover {
   border: 2px solid #afb8c3;
   padding: 4px 9px;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 .auth-button:active {
@@ -444,7 +444,7 @@ h5 {
 
 /*other*/
 
-.errors {
+.page-errors {
   position: fixed;
   z-index: 4;
   left: 50%;

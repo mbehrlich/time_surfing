@@ -7,15 +7,13 @@ class Profile extends React.Component {
 
   render() {
     if (!this.props.user) {
-      console.log(this.props.errors);
       if (this.props.errors.length > 0) {
         let errors = this.props.errors.map((error, idx) => (
           <li key={idx}>{error}</li>
         ));
         return (
           <div>
-            <div className="overlay"></div>
-            <div className="errors">
+            <div className="page-errors">
               <ul>
                 {errors}
               </ul>
@@ -35,29 +33,31 @@ class Profile extends React.Component {
     return (
       <div>
         <main className="container">
-          <aside className="profile-pic">
-            <img src={profilePic} />
-          </aside>
-          <section className="main-profile">
-            <article className="profile-header">
-              <h1>{this.props.user.username}</h1>
-              <h3>Location</h3>
-              <h3>Year</h3>
-            </article>
-            <article className="profile-buttons">
-              <h3>Accepting Guests?</h3>
-              <ul className="profile-buttons-list">
-                <li><button className="profile-button">Send Request</button></li>
-                <li><button className="profile-button">Write Reference</button></li>
-              </ul>
-            </article>
-            <article className="profile-info">
-              <nav className="profile-navbar"></nav>
-              <section className="profile-info-section">
-                Children go here
-              </section>
-            </article>
-          </section>
+          <div className="vertical-container">
+            <aside className="profile-pic">
+              <img src={profilePic} />
+            </aside>
+            <section className="main-profile">
+              <article className="profile-header">
+                <h1>{this.props.user.username}</h1>
+                <h3>Location</h3>
+                <h3>Year</h3>
+              </article>
+              <article className="profile-buttons">
+                <h3>Accepting Guests?</h3>
+                <ul className="profile-buttons-list">
+                  <li><button className="profile-button">Send Request</button></li>
+                  <li><button className="profile-button">Write Reference</button></li>
+                </ul>
+              </article>
+              <article className="profile-info">
+                <nav className="profile-navbar"></nav>
+                <section className="profile-info-section">
+                  Children go here
+                </section>
+              </article>
+            </section>
+          </div>
         </main>
       </div>
     );
