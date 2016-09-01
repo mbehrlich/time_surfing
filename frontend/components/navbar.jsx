@@ -41,7 +41,7 @@ class Navbar extends React.Component {
               <i className="material-icons md-18 arrow">expand_more</i>
             </a>
             <ul id="menu" className={navbarDropdown} >
-              <li><a href="#">Dashboard</a></li>
+              <li><a href="/#/dashboard">Dashboard</a></li>
               <li><a href={"/#/users/" + this.props.currentUser.id}>My Profile</a></li>
               <li><a href="#">Edit Profile</a></li>
 
