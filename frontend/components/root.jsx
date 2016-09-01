@@ -26,11 +26,7 @@ class Root extends React.Component {
   }
 
   getProfile(nextState, replace) {
-    if (!this.props.store.getState().session.currentUser) {
-      replace('/');
-    } else {
-      this.props.store.dispatch(requestUser(nextState.params.id));
-    }
+    this.props.store.dispatch(requestUser(nextState.params.id));
   }
 
   ensureLogin(nextState, replace) {

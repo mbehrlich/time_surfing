@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 8, allow_nil: true }
   validates :gender, inclusion: { in: ["M", "F", "O", nil]}
 
+  has_one :site 
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)

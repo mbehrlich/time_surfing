@@ -1,6 +1,6 @@
 class Api::UsersController < ApplicationController
 
-  before_action :ensure_logged_in, only: [:show, :update, :destroy]
+  before_action :ensure_logged_in, only: [:update, :destroy]
   before_action :ensure_not_logged_in, only: [:create]
   before_action :ensure_correct_user, only: [:update, :destroy]
 
@@ -42,10 +42,6 @@ class Api::UsersController < ApplicationController
     params.require(:user).permit(:username, :password, :firstname, :lastname, :profile, :birthdate, :gender, :description)
   end
 
-  def ensure_correct_user
-    unless current_user.id == params[:id]
-      render json: ["Forbidden"], status: 404
-    end
-  end
+
 
 end

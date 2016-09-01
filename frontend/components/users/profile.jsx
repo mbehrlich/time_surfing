@@ -6,12 +6,6 @@ class Profile extends React.Component {
     super(props);
   }
 
-  componentDidUpdate() {
-    if (!this.props.loggedIn){
-      hashHistory.push("/");
-    }
-  }
-
   render() {
     if (!this.props.user) {
       if (this.props.errors.length > 0) {
@@ -36,6 +30,18 @@ class Profile extends React.Component {
         );
       }
     }
+    let buttons;
+    if (this.props.loggedIn) {
+      buttons = (
+        <ul className="profile-buttons-list">
+          <li><button className="profile-button">Send Request</button></li>
+          <li><button className="profile-button">Write Reference</button></li>
+        </ul>
+      );
+    } else {
+      buttons = (<ul className="profile-buttons-list"></ul>)
+    }
+
     let profilePic = ( this.props.user.profile ? this.props.user.profile : "assets/profile_default.png");
     return (
       <div>
@@ -52,10 +58,7 @@ class Profile extends React.Component {
               </article>
               <article className="profile-buttons">
                 <h3>Accepting Guests?</h3>
-                <ul className="profile-buttons-list">
-                  <li><button className="profile-button">Send Request</button></li>
-                  <li><button className="profile-button">Write Reference</button></li>
-                </ul>
+                {buttons}
               </article>
               <article className="profile-info">
                 <nav className="profile-navbar">
