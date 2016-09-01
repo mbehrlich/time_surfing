@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Dashboard from './dashboard';
+import Splash from './splash';
 
 const mapStateToProps = (store) => ({
   currentUser: store.session.currentUser
@@ -7,4 +7,4 @@ const mapStateToProps = (store) => ({
 
 const mapDispatchToProps = (dispatch) => ({});
 
-export default connect(mapStateToProps, null)(Dashboard);
+export default connect(mapStateToProps, null)(Splash);
