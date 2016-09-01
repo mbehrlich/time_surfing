@@ -8,11 +8,14 @@
   display: inline-block;
   width: 30%;
   margin-right: 2%;
+  margin-top: 30px;
 }
 
 .profile-pic img {
   display: block;
-  width: 100%
+  width: 100%;
+  box-shadow: 2px 2px 2px 1px;
+
 }
 
 .main-profile {

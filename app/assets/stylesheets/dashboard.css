@@ -1,0 +1,95 @@
+.dashboard-user {
+  width: 25%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px;
+  text-align: center;
+  height: 250px;
+}
+
+.dashboard-user-info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #afb8c3;
+}
+
+.dashboard-button {
+  padding: 5px 10px;
+  margin: 20px auto 0 auto;
+  border: 1px solid #afb8c3;
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+}
+
+.dashboard-button:hover {
+  border: 2px solid #afb8c3;
+  padding: 4px 9px;
+  background-color: #f2f2f2;
+}
+
+.dashboard-button:active {
+  background-color: #afb8c3;
+}
+
+.dashboard-main {
+  width: 70%;
+  background-color: white;
+  margin: 0 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px;
+}
+
+.dashboard-section-main {
+  border-top: 2px solid #afb8c3;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.dashboard-section-heading {
+  border-bottom: 1px solid #afb8c3;
+  padding: 10px 0 10px 0;
+}
+
+.dashboard-section-heading i {
+  position: relative;
+  top: 5px;
+}
+
+.cool-eras-main {
+  /*display: flex;*/
+}
+
+.cool-eras {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cool-era {
+  width: 220px;
+  height: 180px;
+  background-size: cover;
+  border: 2px solid #afb8c3;
+}
+
+.antiquity {
+  background-image: url(/assets/antiquity.jpg);
+}
+
+.midage {
+  background-image: url(/assets/middleages.jpg);
+}
+
+.postapoc {
+  background-image: url(/assets/postapoc.jpg);
+}
+
+.era-caption {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(black, transparent);
+}

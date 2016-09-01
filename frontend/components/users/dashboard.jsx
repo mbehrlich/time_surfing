@@ -37,25 +37,24 @@ class Dashboard extends React.Component {
               </section>
             </aside>
             <section className="dashboard-main">
-              <article className="advertisements-main" >
+              <article className="cool-eras-main" >
                 <h3>Visit any era in history</h3>
-                <section className="advertisements">
-                  <figure className="advertisement">
-                    <figcaption className="adcopy">The Renaissance</figcaption>
+                <section className="cool-eras">
+                  <figure className="cool-era antiquity">
+                    <figcaption className="era-caption">Antiquity</figcaption>
                   </figure>
-                  <figure className="advertisement2">
-                    <figcaption className="adcopy">The Middle Ages</figcaption>
+                  <figure className="cool-era midage">
+                    <figcaption className="era-caption">The Middle Ages</figcaption>
                   </figure>
-                  <figure className="advertisement3">
-                    <figcaption className="adcopy">Post-Apocalypse</figcaption>
+                  <figure className="cool-era postapoc">
+                    <figcaption className="era-caption">Post-Apocalypse</figcaption>
                   </figure>
                 </section>
               </article>
               <article className="dashboard-section-main">
                 <section className="dashboard-section-heading">
                   <h4>
-                    <i className="material-icons">hourglass_empty</i>
-                    My Bookings
+                    <i className="material-icons">hourglass_empty</i>My Bookings
                   </h4>
                 </section>
                 Bookings go here
@@ -63,8 +62,7 @@ class Dashboard extends React.Component {
               <article className="dashboard-section-main">
                 <section className="dashboard-section-heading">
                   <h4>
-                    <i className="material-icons">all_inclusive</i>
-                    My Guests
+                    <i className="material-icons">all_inclusive</i> My Guests
                   </h4>
                 </section>
                 Guests go here
