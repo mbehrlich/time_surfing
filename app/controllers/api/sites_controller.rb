@@ -17,7 +17,7 @@ class Api::SitesController < ApplicationController
   end
 
   def site_params
-    params.require(:site).permit(:address, :lat, :lng, :start_date, :end_date, :max_guests, :preferred_gender, :kid_friendly, :pet_friendly, :description, :accepting_guests)
+    params.require(:site).permit(:address, :city, :lat, :lng, :start_date, :end_date, :max_guests, :preferred_gender, :kid_friendly, :pet_friendly, :description, :accepting_guests)
   end
 
 end

@@ -1,6 +1,6 @@
 
 
-const SiteReducer = (state = [], action) {
+const SiteReducer = (state = [], action) => {
   switch (action.type) {
     default:
       return state;

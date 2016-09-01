@@ -21,6 +21,10 @@ class Dashboard extends React.Component {
         </div>
       );
     }
+    let year = null;
+    if (this.props.currentUser.site.start_date) {
+      year = this.props.currentUser.site.start_date.slice(0, 4);
+    }
     return (
       <div>
         <main className="container">
@@ -28,9 +32,9 @@ class Dashboard extends React.Component {
             <aside className="dashboard-user">
               <section className="dashboard-user-info">
                 <h3>{this.props.currentUser.firstname} {this.props.currentUser.lastname}</h3>
-                <h4>Location</h4>
-                <h4>Year</h4>
-                <p>Currently accepting guests?</p>
+                <h4>{this.props.currentUser.site.city}</h4>
+                <h4>{year}</h4>
+                <p>{this.props.currentUser.site.accepting_guests ? "Currently accepting guests" : "Not accepting guests"}</p>
               </section>
               <section className="dashboard-user-button">
                 <button className="dashboard-button">Accept Guests</button>

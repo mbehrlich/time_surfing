@@ -31,10 +31,16 @@ class Profile extends React.Component {
       }
     }
     let buttons;
-    if (this.props.loggedIn) {
+    if (this.props.loggedIn && this.props.user.site.accepting_guests) {
       buttons = (
         <ul className="profile-buttons-list">
           <li><button className="profile-button">Send Request</button></li>
+          <li><button className="profile-button">Write Reference</button></li>
+        </ul>
+      );
+    } else if (this.props.loggedIn) {
+      buttons = (
+        <ul className="profile-buttons-list">
           <li><button className="profile-button">Write Reference</button></li>
         </ul>
       );
@@ -42,6 +48,10 @@ class Profile extends React.Component {
       buttons = (<ul className="profile-buttons-list"></ul>)
     }
 
+    let year = null;
+    if (this.props.user.site.start_date) {
+      year = this.props.user.site.start_date.slice(0, 4);
+    }
     let profilePic = ( this.props.user.profile ? this.props.user.profile : "assets/profile_default.png");
     return (
       <div>
@@ -53,17 +63,18 @@ class Profile extends React.Component {
             <section className="main-profile">
               <article className="profile-header">
                 <h1>{this.props.user.username}</h1>
-                <h3>Location</h3>
-                <h3>Year</h3>
+                <h3>{this.props.user.site.city}</h3>
+                <h3>{year}</h3>
               </article>
               <article className="profile-buttons">
-                <h3>Accepting Guests?</h3>
+                <h3>{this.props.currentUser.site.accepting_guests ? "Accepting Guests" : "Not Accepting Guests"}</h3>
                 {buttons}
               </article>
               <article className="profile-info">
                 <nav className="profile-navbar">
                   <ul>
                     <li><a href={"/#/users/" + this.props.user.id} className="profile-navbar-links">about</a></li>
+                    <li><a href={"/#/users/" + this.props.user.id + "/site"} className="profile-navbar-links">house</a></li>
                   </ul>
                 </nav>
                 {this.props.children}
