@@ -70,3 +70,46 @@
   padding: 10px;
   margin: 10px 0;
 }
+
+.profile-navbar {
+  padding: 10px 10px;
+  background-color: #bfcad2;
+}
+
+.profile-navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-navbar li {
+}
+
+.profile-navbar-links {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.profile-navbar-links:hover {
+  background-color: #2371a3;
+  color: white;
+}
+
+.profile-navbar-links:active {
+  background-color: #7D0552;
+  color: white;
+}
+
+.inner-info {
+  margin: 15px;
+}
+
+.data-point {
+  margin-bottom: 10px;
+}
+
+.about-me {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #bfcad2;
+}

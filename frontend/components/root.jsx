@@ -8,6 +8,7 @@ import JoinContainer from './auth/join_container';
 import Footer from './footer';
 import ProfileContainer from './users/profile_container';
 import { requestUser } from '../actions/user_actions';
+import AboutContainer from './users/about_container';
 
 class Root extends React.Component {
   constructor(props) {
@@ -40,7 +41,9 @@ class Root extends React.Component {
               <Route path="/login" component={LoginContainer} onEnter={this.ensureNotLogin} />
               <Route path="/join" component={JoinContainer} onEnter={this.ensureNotLogin} />
             </Route>
-            <Route path="/users/:id" component={ProfileContainer} onEnter={this.getProfile} />
+            <Route path="/users/:id" component={ProfileContainer} onEnter={this.getProfile}>
+              <IndexRoute component={AboutContainer} />
+            </Route>
           </Router>
           <Footer />
         </div>

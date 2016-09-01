@@ -1,8 +1,15 @@
 import React from 'react';
+import { hashHistory } from 'react-router';
 
 class Profile extends React.Component {
   constructor(props) {
     super(props);
+  }
+
+  componentDidUpdate() {
+    if (!this.props.loggedIn){
+      hashHistory.push("/");
+    }
   }
 
   render() {
@@ -51,10 +58,12 @@ class Profile extends React.Component {
                 </ul>
               </article>
               <article className="profile-info">
-                <nav className="profile-navbar"></nav>
-                <section className="profile-info-section">
-                  Children go here
-                </section>
+                <nav className="profile-navbar">
+                  <ul>
+                    <li><a href={"/#/users/" + this.props.user.id} className="profile-navbar-links">about</a></li>
+                  </ul>
+                </nav>
+                {this.props.children}
               </article>
             </section>
           </div>
