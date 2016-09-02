@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import EditProfile from './edit_profile';
+import { updateUser } from '../../actions/user_actions';
 
 const mapStateToProps = (store) => ({
   errors: store.session.errors,
@@ -8,7 +9,7 @@ const mapStateToProps = (store) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  updateUser: (user_id, new_info) => dispatch(updateUser(user_id, new_info))
+  updateUser: (id, newInfo) => dispatch(updateUser(id, newInfo))
 });
 
-export default connect(mapStateToProps, null)(EditProfile);
+export default connect(mapStateToProps, mapDispatchToProps)(EditProfile);

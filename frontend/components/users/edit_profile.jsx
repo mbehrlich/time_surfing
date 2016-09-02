@@ -4,6 +4,24 @@ import { hashHistory } from 'react-router';
 class EditProfile extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      error: undefined
+    }
+    this.updateProfilePic = this.updateProfilePic.bind(this);
+  }
+
+  updateProfilePic() {
+    cloudinary.openUploadWidget(window.cloudinaryOptions, (error, images) => {
+      if (error) {
+        this.setState({error: error.message});
+      } else if (images.length > 1) {
+        this.setState({error: "You can only upload one profile image"});
+      } else if (images.length === 0) {
+        this.setState({error: "No image selected"})
+      } else {
+        this.props.updateUser(this.props.currentUser.id, { profile: images[0].url });
+      }
+    });
   }
 
   componentDidUpdate() {
@@ -26,13 +44,17 @@ class EditProfile extends React.Component {
     if (this.props.currentUser.site.start_date) {
       year = this.props.currentUser.site.start_date.slice(0, 4);
     }
+    let errors = this.props.errors.map((error, idx) => (
+      <h4 key={idx}>{error}</h4>
+    ));
     let profilePic = ( this.props.currentUser.profile ? this.props.currentUser.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png");
     return (
       <div>
         <main className="container">
           <div className="vertical-container">
             <aside className="profile-pic">
-              <img src={profilePic} />
+              <img src={profilePic} onClick={this.updateProfilePic}/>
+              <p>Click image to update profile pic</p>
             </aside>
             <section className="main-profile">
               <article className="profile-header">
@@ -41,7 +63,8 @@ class EditProfile extends React.Component {
                 <h3>{year}</h3>
               </article>
               <article className="profile-buttons">
-                <h3>{this.props.currentUser.site.accepting_guests ? "Accepting Guests" : "Not Accepting Guests"}</h3>
+                <h4>{this.state.error}</h4>
+                {errors}
               </article>
               <article className="profile-info">
                 <nav className="profile-navbar">

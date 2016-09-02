@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_correct_user
-    unless current_user.id == params[:id]
+    unless current_user.id == params[:id].to_i
       render json: ["Forbidden"], status: 404
     end
   end
