@@ -70,7 +70,7 @@ class EditProfile extends React.Component {
                 <nav className="profile-navbar">
                   <ul>
                     <li><a href="/#/edit_profile" className="profile-navbar-links">about</a></li>
-                    <li><a href={"/#/users/" + this.props.currentUser.id + "/site"} className="profile-navbar-links">house</a></li>
+                    <li><a href="/#/edit_profile/site" className="profile-navbar-links">house</a></li>
                   </ul>
                 </nav>
                 {this.props.children}

@@ -7,9 +7,9 @@ class EditAbout extends React.Component {
       firstname: this.props.currentUser.firstname,
       lastname: this.props.currentUser.lastname,
       password: "",
-      gender: this.props.currentUser.gender,
-      birthdate: this.props.currentUser.birthdate,
-      description: this.props.currentUser.description
+      gender: (this.props.currentUser.gender ? this.props.currentUser.gender : ""),
+      birthdate: (this.props.currentUser.birthdate ? this.props.currentUser.birthdate : ""),
+      description: (this.props.currentUser.description ? this.props.currentUser.description : "")
     };
     this.updateField = this.updateField.bind(this);
     this.updateGender = this.updateGender.bind(this);

@@ -164,6 +164,12 @@
   margin: 0;
 }
 
+.friendly-label {
+  display: inline;
+  width: auto;
+  margin: 0;
+}
+
 .update-form input[type="date"] {
   width: 40%
 }
@@ -172,6 +178,13 @@
   display: inline;
   width: auto;
   border: 0;
+}
+
+.update-form input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  border: 0;
+  margin-left: 5px;
 }
 
 .update-form input:focus {

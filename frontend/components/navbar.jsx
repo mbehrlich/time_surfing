@@ -31,7 +31,7 @@ class Navbar extends React.Component {
     let navButtons;
     let navbarDropdown = (this.state.menu ? "navbar-dropdown popup" : "navbar-dropdown not-popup");
     if (logged_in) {
-      let profilePic = (this.props.currentUser.profile ? this.props.currentUser.profile : "assets/profile_default.png");
+      let profilePic = (this.props.currentUser.profile ? this.props.currentUser.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png");
       navButtons = (
         <ul className="nav-buttons">
           <li><button onClick={this.props.logoutUser} >Log out</button></li>

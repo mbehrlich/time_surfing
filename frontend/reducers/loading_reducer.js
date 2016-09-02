@@ -6,6 +6,7 @@ const LoadingReducer = (state = false, action) => {
     case "UPDATE_USER":
     case "LOGIN_USER":
     case "CREATE_USER":
+    case "UPDATE_SITE":
       return true;
     case "RECEIVE_USER":
     case "RECEIVE_ERRORS":

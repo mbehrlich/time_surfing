@@ -7,6 +7,7 @@ json.birthdate user.birthdate
 json.gender user.gender
 json.description user.description
 json.site do
+  json.id user.site.id
   json.address user.site.address
   json.city user.site.city
   json.lat user.site.lat
