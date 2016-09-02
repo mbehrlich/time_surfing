@@ -31,7 +31,7 @@ class EditProfile extends React.Component {
   }
 
   render() {
-    if (!this.props.currentUser) {
+    if (!this.props.currentUser || this.props.loading) {
       return (
         <div>
           <div className="overlay"></div>
@@ -53,7 +53,7 @@ class EditProfile extends React.Component {
         <main className="container">
           <div className="vertical-container">
             <aside className="profile-pic">
-              <img src={profilePic} onClick={this.updateProfilePic}/>
+              <img className="edit-pic" src={profilePic} onClick={this.updateProfilePic}/>
               <p>Click image to update profile pic</p>
             </aside>
             <section className="main-profile">
@@ -69,7 +69,7 @@ class EditProfile extends React.Component {
               <article className="profile-info">
                 <nav className="profile-navbar">
                   <ul>
-                    <li><a href={"/#/users/" + this.props.currentUser.id} className="profile-navbar-links">about</a></li>
+                    <li><a href="/#/edit_profile" className="profile-navbar-links">about</a></li>
                     <li><a href={"/#/users/" + this.props.currentUser.id + "/site"} className="profile-navbar-links">house</a></li>
                   </ul>
                 </nav>

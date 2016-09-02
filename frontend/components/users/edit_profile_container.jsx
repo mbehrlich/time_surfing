@@ -5,7 +5,8 @@ import { updateUser } from '../../actions/user_actions';
 const mapStateToProps = (store) => ({
   errors: store.session.errors,
   currentUser: store.session.currentUser,
-  loggedIn: (store.session.currentUser ? true : false)
+  loggedIn: (store.session.currentUser ? true : false),
+  loading: store.loading
 });
 
 const mapDispatchToProps = (dispatch) => ({

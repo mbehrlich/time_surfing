@@ -12,6 +12,7 @@ import AboutContainer from './users/about_container';
 import DashboardContainer from './users/dashboard_container';
 import SiteContainer from './users/site_container';
 import EditProfileContainer from './users/edit_profile_container';
+import EditAboutContainer from './users/edit_about_container';
 
 class Root extends React.Component {
   constructor(props) {
@@ -48,7 +49,9 @@ class Root extends React.Component {
               <Route path="/join" component={JoinContainer} onEnter={this.ensureNotLogin} />
             </Route>
             <Route path="/dashboard" component={DashboardContainer} onEnter={this.ensureLogin} />
-            <Route path="/edit_profile" component={EditProfileContainer} onEnter={this.ensureLogin} />
+            <Route path="/edit_profile" component={EditProfileContainer} onEnter={this.ensureLogin} >
+              <IndexRoute component={EditAboutContainer} />
+            </Route>
             <Route path="/users/:id" component={ProfileContainer} onEnter={this.getProfile}>
               <IndexRoute component={AboutContainer} />
               <Route path="/users/:id/site" component={SiteContainer} />
