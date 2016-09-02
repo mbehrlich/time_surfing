@@ -34,23 +34,32 @@ users = User.create([{
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }, {
     username: "Time_Traveler", firstname: "H.G.", lastname: "Wells", password: "12345678",
-    profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768594/hgwells_cgnji4.jpg", 
+    profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768594/hgwells_cgnji4.jpg",
     gender: "M", birthdate: Date.new(1866, 9, 21),
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }]);
 
   sites = Site.create([{
-    user_id: 1, city: "Hill Valley, CA", start_date: Date.new(1985, 10, 25),
-    end_date: Date.new(1990, 5, 25), accepting_guests: false
-  }, {
-    user_id: 2, city: "Hill Valley, CA", start_date: Date.new(1955, 11, 5),
+    user_id: 1, city: "Hill Valley", lat: 34.238936, lng: -118.433554,
+     start_date: Date.new(1985, 10, 25), address: "9303 Roslyndale Avenue",
     end_date: Date.new(1990, 5, 25), accepting_guests: true
   }, {
-    user_id: 3
+    user_id: 2, city: "Hill Valley", lat: 34.151733, lng: -118.160890,
+     start_date: Date.new(1955, 11, 5),
+    end_date: Date.new(1990, 5, 25), accepting_guests: true
   }, {
-    user_id: 4
+    user_id: 3, city: "San Dimas", lat: 34.108146, lng: -117.807089,
+    start_date: Date.new(1988, 1, 1), end_date: Date.new(2050, 8, 13),
+    accepting_guests: true
   }, {
-    user_id: 5
+    user_id: 4, city: "San Dimas", lat: 34.110660, lng: -117.804922,
+    start_date: Date.new(1988, 1, 1), end_date: Date.new(2050, 8, 13),
+    accepting_guests: true
   }, {
-    user_id: 6
+    user_id: 5, city: "London", lat: 51.467677, lng: -0.023359,
+    start_date: Date.new(-1000, 1, 1), end_date: Date.new(5000, 1, 1),
+    accepting_guests: true
+  }, {
+    user_id: 6, lat: 51.324500, lng: -0.543267, start_date: Date.new(1880, 1, 1),
+    end_date: Date.new(1946, 8, 13), accepting_guests: true, city: "London"
   }])

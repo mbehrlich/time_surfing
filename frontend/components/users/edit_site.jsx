@@ -12,13 +12,26 @@ class EditSite extends React.Component {
       kid_friendly: this.props.site.kid_friendly,
       pet_friendly: this.props.site.pet_friendly,
       description: (this.props.site.description === null ? "" : this.props.site.description),
-      city: (this.props.site.city === null ? "" : this.props.site.city)
+      city: (this.props.site.city === null ? undefined : this.props.site.city),
+      lat: (this.props.site.lat === null ? undefined : this.props.site.lat),
+      lng: (this.props.site.lng === null ? undefined : this.props.site.lng)
     };
     this.state = siteState;
+    this.updateAddress = this.updateAddress.bind(this);
     this.updateField = this.updateField.bind(this);
     this.updateGender = this.updateGender.bind(this);
     this.updateFriendly = this.updateFriendly.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  updateAddress() {
+    let place = this.autocomplete.getPlace();
+    this.setState({
+      address: this.input.value,
+      city: place.vicinity,
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng()
+    })
   }
 
   updateField(event) {
@@ -43,8 +56,15 @@ class EditSite extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let newInfo = this.state
+    let newInfo = this.state;
     this.props.updateSite(this.props.site.id, newInfo);
+  }
+
+  componentDidMount() {
+    this.input = document.getElementById('address-auto');
+    let options = {types: ['address']}
+    this.autocomplete = new google.maps.places.Autocomplete(this.input, options);
+    this.autocomplete.addListener('place_changed', this.updateAddress);
   }
 
   render() {
@@ -52,12 +72,8 @@ class EditSite extends React.Component {
       <div className="inner-info">
         <form className="update-form">
           <label>
-            Address:
-            <input type="text" name="address" value={this.state.address} onChange={this.updateField} />
-          </label>
-          <label>
-            City:
-            <input type="text" name="city" value={this.state.city} onChange={this.updateField} />
+            Location:
+            <input type="text" id="address-auto" name="address" value={this.state.address} onInput={this.updateField} />
           </label>
           <label>
             Start Date:

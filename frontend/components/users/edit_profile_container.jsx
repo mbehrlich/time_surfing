@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import EditProfile from './edit_profile';
 import { updateUser } from '../../actions/user_actions';
 
+
 const mapStateToProps = (store) => ({
   errors: store.session.errors,
   currentUser: store.session.currentUser,

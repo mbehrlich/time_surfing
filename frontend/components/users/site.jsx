@@ -19,7 +19,6 @@ class Site extends React.Component {
     return (
       <div className="inner-info">
         <p className="data-point"><strong>Address:</strong> {this.props.user.site.address}</p>
-        <p className="data-point"><strong>Location:</strong> {this.props.user.site.city}</p>
         <p className="data-point"><strong>Latitude:</strong> {this.props.user.site.lat}</p>
         <p className="data-point"><strong>Longitude:</strong> {this.props.user.site.lng}</p>
         <p className="data-point"><strong>Accepting Guests:</strong> {this.props.user.site.start_date}-{this.props.user.site.end_date}</p>

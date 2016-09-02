@@ -4,12 +4,23 @@ import { hashHistory } from 'react-router';
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
+    this.acceptGuests = this.acceptGuests.bind(this);
   }
 
   componentDidUpdate() {
     if (!this.props.currentUser) {
       hashHistory.push("/");
     }
+  }
+
+  acceptGuests() {
+    let newInfo;
+    if (this.props.currentUser.site.accepting_guests) {
+      newInfo = {accepting_guests: false}
+    } else {
+      newInfo = {accepting_guests: true}
+    }
+    this.props.updateSite(this.props.currentUser.site.id, newInfo)
   }
 
   render() {
@@ -37,7 +48,7 @@ class Dashboard extends React.Component {
                 <p>{this.props.currentUser.site.accepting_guests ? "Currently accepting guests" : "Not accepting guests"}</p>
               </section>
               <section className="dashboard-user-button">
-                <button className="dashboard-button">Accept Guests</button>
+                <button className="dashboard-button" onClick={this.acceptGuests} >{this.props.currentUser.site.accepting_guests ? "Stop accepting guests" : "Accept guests"}</button>
                 <a href="/#/edit_profile"><button className="dashboard-button">Edit Profile</button></a>
               </section>
             </aside>
