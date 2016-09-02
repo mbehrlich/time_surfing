@@ -4,7 +4,7 @@
   background-color: white;
   box-shadow: 2px 2px 2px 1px;
   text-align: center;
-  height: 250px;
+  height: 300px;
 }
 
 .dashboard-user-info {
@@ -75,15 +75,15 @@
 }
 
 .antiquity {
-  background-image: url(/assets/antiquity.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768602/antiquity_duq6kr.jpg);
 }
 
 .midage {
-  background-image: url(/assets/middleages.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768618/middleages_jgqi3r.jpg);
 }
 
 .postapoc {
-  background-image: url(/assets/postapoc.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768598/postapoc_anwhzk.jpg);
 }
 
 .era-caption {

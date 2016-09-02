@@ -38,6 +38,7 @@ class Dashboard extends React.Component {
               </section>
               <section className="dashboard-user-button">
                 <button className="dashboard-button">Accept Guests</button>
+                <a href="/#/edit_profile"><button className="dashboard-button">Edit Profile</button></a>
               </section>
             </aside>
             <section className="dashboard-main">

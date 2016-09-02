@@ -258,7 +258,7 @@ h5 {
 /*splash*/
 
 .background {
-  background-image: url(/assets/time2.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768648/time2_zxjpk1.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -324,11 +324,11 @@ h5 {
 }
 
 .figure-left {
-  background-image: url(/assets/rome.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768657/rome_cqxxtt.jpg);
 }
 
 .figure-right {
-  background-image: url(/assets/brunner.jpg);
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768628/brunner_yukgym.jpg);
 }
 
 .testimonial-caption {

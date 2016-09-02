@@ -52,7 +52,7 @@ class Profile extends React.Component {
     if (this.props.user.site.start_date) {
       year = this.props.user.site.start_date.slice(0, 4);
     }
-    let profilePic = ( this.props.user.profile ? this.props.user.profile : "assets/profile_default.png");
+    let profilePic = ( this.props.user.profile ? this.props.user.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png");
     return (
       <div>
         <main className="container">
@@ -67,7 +67,7 @@ class Profile extends React.Component {
                 <h3>{year}</h3>
               </article>
               <article className="profile-buttons">
-                <h3>{this.props.currentUser.site.accepting_guests ? "Accepting Guests" : "Not Accepting Guests"}</h3>
+                <h3>{this.props.user.site.accepting_guests ? "Accepting Guests" : "Not Accepting Guests"}</h3>
                 {buttons}
               </article>
               <article className="profile-info">

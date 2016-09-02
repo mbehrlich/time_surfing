@@ -42,11 +42,12 @@ class Splash extends React.Component {
               </div>
               <section className="testimonial-users group">
                 <figure className="testimonial-user1 testimonial-user">
-                  <img src="assets/mcfly.JPG" />
+                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768592/mcfly_dulxaw.jpg" />
                   <figcaption>Marty</figcaption>
                 </figure>
                 <figure className="testimonial-user2 testimonial-user">
-                  <img src="assets/doc_brown.png" />
+                  <img src="
+http://res.cloudinary.com/dush6wf6z/image/upload/v1472768597/doc_brown_xz9jjg.png" />
                   <figcaption>Doc Brown</figcaption>
                 </figure>
               </section>
@@ -64,11 +65,11 @@ class Splash extends React.Component {
                   <i className="material-icons">hourglass_empty</i>
                 </div>          <section className="testimonial-users group">
                 <figure className="testimonial-user1 testimonial-user">
-                  <img src="assets/Bill.jpg" />
+                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768591/Bill_d9vzzg.jpg" />
                   <figcaption>Bill</figcaption>
                 </figure>
                 <figure className="testimonial-user2 testimonial-user">
-                  <img src="assets/ted.png" />
+                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768614/ted_no40js.png" />
                   <figcaption>Ted</figcaption>
                 </figure>
               </section>

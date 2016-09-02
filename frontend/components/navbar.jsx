@@ -43,7 +43,7 @@ class Navbar extends React.Component {
             <ul id="menu" className={navbarDropdown} >
               <li><a href="/#/dashboard">Dashboard</a></li>
               <li><a href={"/#/users/" + this.props.currentUser.id}>My Profile</a></li>
-              <li><a href="#">Edit Profile</a></li>
+              <li><a href="/#/edit_profile">Edit Profile</a></li>
 
             </ul>
           </li>
