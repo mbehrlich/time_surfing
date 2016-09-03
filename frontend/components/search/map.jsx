@@ -5,9 +5,18 @@ class Map extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    let mapEl = document.getElementById('map');
+    let options = {
+      center: {lat: 30, lng: 30},
+      zoom: 8
+    };
+    this.map = new google.maps.Map(mapEl, options);
+  }
+
   render() {
     return (
-      <div className="map">Map</div>
+      <div id="map" className="map"></div>
     );
   }
 

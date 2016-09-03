@@ -10,8 +10,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="block-navbar"></div>
+      <div className="flex-container">
         <main className="search-main">
           <SearchForm />
           <SearchResults />
