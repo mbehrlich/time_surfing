@@ -14,6 +14,8 @@ class Api::SitesController < ApplicationController
   end
 
   def location
+    @sites = User.all.includes(:site)
+    render :index
   end
 
   def site_params

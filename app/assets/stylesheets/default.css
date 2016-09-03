@@ -13,6 +13,7 @@ body {
   border-bottom: 2px solid #bfcad2;
   min-height: 60px;
   width: 100%;
+  z-index: 2;
 }
 
 .navbar {
@@ -184,6 +185,7 @@ h5 {
   height: 100%;
   width: 100%;
   background-color: black;
+  z-index: 3;
 }
 
 .auth-form {
@@ -191,7 +193,7 @@ h5 {
   min-width: 300px;
   opacity: 1;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   top: 50%;
   left: 50%;

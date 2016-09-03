@@ -8,12 +8,16 @@ class Search extends React.Component {
     super(props)
   }
 
+  componentDidMount() {
+    this.props.requestSites();
+  }
+
   render() {
     return (
       <div className="flex-container">
         <main className="search-main">
           <SearchForm />
-          <SearchResults />
+          <SearchResults sites={this.props.sites} />
         </main>
         <aside className="search-map">
           <Map />

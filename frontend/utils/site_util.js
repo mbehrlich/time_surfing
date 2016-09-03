@@ -7,3 +7,12 @@ export const updateSite = (id, newInfo, success, error) => {
     error
   });
 };
+
+export const fetchSites = (success, error) => {
+  $.ajax({
+    url: 'api/location',
+    method: "GET",
+    success,
+    error
+  });
+}
