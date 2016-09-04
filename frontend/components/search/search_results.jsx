@@ -1,12 +1,16 @@
 import React from 'react';
+import SearchResult from './search_result';
 
 const SearchResults = ({sites}) => {
   let siteEls = sites.map((site) => (
-    <p key={site.id}>{site.username}</p>
+    <SearchResult key={site.id} site={site} />
   ));
   return (
     <div className="search-results">
-      {siteEls}
+      <h4>{siteEls.length} hosts found</h4>
+      <ul>
+        {siteEls}
+      </ul>
     </div>
   );
 }

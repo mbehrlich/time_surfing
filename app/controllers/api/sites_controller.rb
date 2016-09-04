@@ -14,7 +14,7 @@ class Api::SitesController < ApplicationController
   end
 
   def location
-    @sites = User.all.includes(:site)
+    @sites = Site.in_bounds(params["bounds"], params["time"]).includes(:user)
     render :index
   end
 

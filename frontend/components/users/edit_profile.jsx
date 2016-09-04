@@ -40,10 +40,6 @@ class EditProfile extends React.Component {
       );
     }
 
-    let year = null;
-    if (this.props.currentUser.site.start_date) {
-      year = this.props.currentUser.site.start_date.slice(0, 4);
-    }
     let errors = this.props.errors.map((error, idx) => (
       <h4 key={idx}>{error}</h4>
     ));
@@ -60,7 +56,7 @@ class EditProfile extends React.Component {
               <article className="profile-header">
                 <h1>{this.props.currentUser.username}</h1>
                 <h3>{this.props.currentUser.site.city}</h3>
-                <h3>{year}</h3>
+                <h3>{this.props.currentUser.year}</h3>
               </article>
               <article className="profile-buttons">
                 <h4>{this.state.error}</h4>

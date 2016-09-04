@@ -1,1 +1,1 @@
-json.array! @sites, partial: 'api/users/user.json.jbuilder', as: :user
+json.array! @sites, partial: 'site', as: :site

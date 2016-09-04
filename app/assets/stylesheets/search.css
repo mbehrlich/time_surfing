@@ -10,7 +10,52 @@
   background-color: white;
   box-shadow: 2px 2px 2px 1px;
   padding: 20px;
+}
 
+.date-search {
+  display: flex;
+}
+
+.date-search button {
+  padding: 5px 10px;
+  /*margin: 20px auto 0 auto;*/
+  border: 1px solid #afb8c3;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  align-self: center;
+}
+
+.date-search-input {
+  display: block;
+  width: 90%;
+  margin: 0;
+  border: 1px solid #aeb5ba;
+  border-radius: 5px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  color: #929ead;
+  background-color: #ecfof1;
+}
+
+.date-search-input:focus {
+  border: 1px solid #287fb8;
+}
+
+.epoch {
+  display: block;
+}
+
+.date-search button:hover {
+  border: 2px solid #afb8c3;
+  padding: 4px 9px;
+  background-color: #f2f2f2;
+}
+
+.date-search button:active {
+  background-color: #afb8c3;
 }
 
 .flex-container {
@@ -23,17 +68,52 @@
   height: 100%;
 }
 
+/*results*/
+
 .search-results {
   display: block;
   margin-top: 20px;
   background-color: white;
   box-shadow: 2px 2px 2px 1px;
   padding: 20px;
-
 }
+
+.search-result {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  border-top: 1px solid #afb8c3;
+}
+
+.mini-profile {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.mini-info a:hover {
+  text-decoration: underline;
+}
+
+.mini-accepting {
+  margin-left: auto;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mini-accept {
+  color: green;
+}
+
+.mini-notacc {
+  color: red;
+}
+
+/*map*/
 
 .search-map {
   width: 48%;
+  height: 80vh;
   margin: 20px 0 20px 20px;
   background-color: white;
   box-shadow: 2px 2px 2px 1px;

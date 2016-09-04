@@ -6,6 +6,7 @@ json.profile user.profile
 json.birthdate user.birthdate
 json.gender user.gender
 json.description user.description
+json.year user.site.start_date.year if user.site.start_date
 json.site do
   json.id user.site.id
   json.address user.site.address
