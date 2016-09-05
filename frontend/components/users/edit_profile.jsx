@@ -13,7 +13,8 @@ class EditProfile extends React.Component {
   updateProfilePic() {
     cloudinary.openUploadWidget(window.cloudinaryOptions, (error, images) => {
       if (error) {
-        this.setState({error: error.message});
+        console.log(error.message);
+        // this.setState({error: error.message});
       } else if (images.length > 1) {
         this.setState({error: "You can only upload one profile image"});
       } else if (images.length === 0) {

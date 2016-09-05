@@ -2,7 +2,7 @@
   width: 25%;
   padding: 20px;
   background-color: white;
-  box-shadow: 2px 2px 2px 1px;
+  box-shadow: 2px 2px 10px 1px;
   text-align: center;
   height: 300px;
 }
@@ -33,11 +33,11 @@
 }
 
 .dashboard-main {
-  width: 70%;
+  width: 75%;
   background-color: white;
   margin: 0 20px;
   padding: 20px;
-  box-shadow: 2px 2px 2px 1px;
+  box-shadow: 2px 2px 10px 1px;
 }
 
 .dashboard-section-main {

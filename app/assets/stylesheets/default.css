@@ -29,7 +29,7 @@ body {
 .logo {
 
   font-size: 24px;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .logo-icon {
@@ -222,11 +222,15 @@ h5 {
   border-radius: 5%;
   background-color: white;
   padding: 10px;
-  box-shadow: 2px 2px 2px 1px;
+  box-shadow: 2px 2px 10px 1px;
+}
+
+.auth-form h3 {
+  padding: 5px 15px;
 }
 
 .auth {
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .auth label {
@@ -259,7 +263,7 @@ h5 {
 .auth-button {
   padding: 5px 10px;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 20px auto;
   border: 1px solid #afb8c3;
   border-radius: 5px;
   background-color: white;
@@ -444,7 +448,7 @@ h5 {
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0 0 0;
+  padding: 50px 0 0 0;
   background-color: white;
   font-size: 18px;
 }
@@ -460,7 +464,7 @@ h5 {
 
 .footer p {
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   font-size: 12px;
 }
 
