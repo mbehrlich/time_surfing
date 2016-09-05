@@ -1,12 +1,22 @@
 import React from 'react';
-import { withRouter } from 'react-router';
+import { withRouter, hashHistory } from 'react-router';
 
 class Navbar extends React.Component {
 
   constructor(props) {
     super(props);
     this.iconClick = this.iconClick.bind(this);
-    this.state = {menu: false}
+    this.state = {
+      lat: this.props.spacetime.lat,
+      lng: this.props.spacetime.lng,
+      location: "",
+      start_date: this.props.spacetime.start_date,
+      end_date: this.props.spacetime.end_date,
+      era: this.props.spacetime.era,
+      menu: false
+    };
+    this.search = this.search.bind(this);
+    this.updateSearch = this.updateSearch.bind(this);
   }
 
   iconClick(e) {
@@ -23,6 +33,34 @@ class Navbar extends React.Component {
     } else {
       removeClick();
     }
+  }
+
+
+  componentDidMount() {
+    let input = document.getElementById('nav-search')
+    let options = {types: ['(cities)']};
+    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+    this.autocomplete.addListener('place_changed', this.search);
+  }
+
+  search() {
+    let place = this.autocomplete.getPlace();
+    this.setState({
+      // location: place.query,
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng(),
+      location: ""
+    });
+    this.props.updateSpacetime(this.state);
+    hashHistory.push("/location_search");
+  }
+
+  updateSearch(e) {
+    this.setState({location: e.target.value});
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
   }
 
 
@@ -62,6 +100,9 @@ class Navbar extends React.Component {
       <section className="nav-container">
         <nav className="navbar">
           <div className="logo"><a href="/#/"><i className="material-icons logo-icon">hourglass_empty</i> Timesurfing</a></div>
+          <form className="nav-search" onSubmit={this.handleSubmit} >
+            <input type="text" id="nav-search" placeholder="Where do you want to go?" value={this.state.location} onChange={this.updateSearch} />
+          </form>
           {navButtons}
         </nav>
       </section>

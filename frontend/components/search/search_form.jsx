@@ -3,8 +3,8 @@ import React from 'react';
 class SearchForm extends React.Component {
   constructor(props) {
     super(props);
-    let from = this.props.filters.time.from;
-    let to = this.props.filters.time.to;
+    let from = this.props.spacetime.start_date;
+    let to = this.props.spacetime.end_date;
     let fromEpoch = "AD";
     let toEpoch = "AD";
     if (from[0] === "-") {

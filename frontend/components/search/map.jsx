@@ -4,13 +4,14 @@ import MarkerManager from '../../utils/marker_manager';
 class Map extends React.Component {
   constructor(props) {
     super(props);
+    this.defaultProps = props;
   }
 
   componentDidMount() {
     let mapEl = document.getElementById('map');
     let options = {
-      center: {lat: 37, lng: -122},
-      zoom: 4
+      center: {lat: this.props.spacetime.lat, lng: this.props.spacetime.lng},
+      zoom: 6
     };
     this.map = new google.maps.Map(mapEl, options);
     this.markerManager = new MarkerManager(this.map);
@@ -26,6 +27,10 @@ class Map extends React.Component {
 
   componentDidUpdate() {
     this.markerManager.updateMarkers(this.props.sites);
+    if (this.defaultProps.spacetime.lat != this.props.spacetime.lat && this.defaultProps.spacetime.lng != this.props.spacetime.lng) {
+      this.map.setCenter({lat: this.props.spacetime.lat, lng: this.props.spacetime.lng});
+      this.defaultProps = this.props
+    }
   }
 
   render() {

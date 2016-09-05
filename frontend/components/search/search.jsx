@@ -16,11 +16,11 @@ class Search extends React.Component {
     return (
       <div className="flex-container">
         <main className="search-main">
-          <SearchForm filters={this.props.filters} updateDates={this.props.updateDates} />
+          <SearchForm spacetime={this.props.spacetime} filters={this.props.filters} updateDates={this.props.updateDates} />
           <SearchResults sites={this.props.sites} />
         </main>
         <aside className="search-map">
-          <Map sites={this.props.sites} updateBounds={this.props.updateBounds} />
+          <Map spacetime={this.props.spacetime} sites={this.props.sites} updateBounds={this.props.updateBounds} />
         </aside>
       </div>
     );

@@ -6,7 +6,8 @@ import Search from './search';
 const mapStateToProps = state => ({
   sites: state.sites.sites,
   filters: state.filters,
-  errors: state.sites.errors
+  errors: state.sites.errors,
+  spacetime: state.spacetime
 });
 
 const mapDispatchToProps = dispatch => ({

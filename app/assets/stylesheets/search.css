@@ -125,3 +125,22 @@
   width: 100%;
   height: 80vh;
 }
+
+.info-window {
+  height: 55px;
+  width: 200px;
+}
+
+.info-window img {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+.info-window a:hover {
+  text-decoration: underline;
+}
+
+.info-window div {
+  display: inline-block;
+}

@@ -4,10 +4,50 @@ import { hashHistory } from 'react-router';
 
 class Splash extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      lat: this.props.spacetime.lat,
+      lng: this.props.spacetime.lng,
+      location: "",
+      start_date: this.props.spacetime.start_date,
+      end_date: this.props.spacetime.end_date,
+      era: this.props.spacetime.era
+    };
+    this.search = this.search.bind(this);
+    this.updateSearch = this.updateSearch.bind(this);
+  }
+
+  componentDidMount() {
+    let input = document.getElementById('front-search')
+    let options = {types: ['(cities)']};
+    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+    this.autocomplete.addListener('place_changed', this.search);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+  }
+
   componentDidUpdate() {
     if (this.props.currentUser){
       hashHistory.push("/dashboard");
     }
+  }
+
+  search() {
+    let place = this.autocomplete.getPlace();
+    this.setState({
+      // location: place.query,
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng()
+    });
+    this.props.updateSpacetime(this.state);
+    hashHistory.push("/location_search");
+  }
+
+  updateSearch(e) {
+    this.setState({location: e.target.value});
   }
 
   render() {
@@ -20,8 +60,8 @@ class Splash extends React.Component {
             <header className="header">
               <h1 className="main-title">Stay with Locals and Meet Time Travelers</h1>
               <h3 className="secondary-title">Share authentic Time Travel Experiences</h3>
-              <form>
-                <input type="text" className="front-search" placeholder="Where do you want to go?"/>
+              <form onSubmit={this.handleSubmit} >
+                <input type="text" id="front-search" className="front-search" placeholder="Where do you want to go?" value={this.state.location} onChange={this.updateSearch} />
 
               </form>
             </header>
