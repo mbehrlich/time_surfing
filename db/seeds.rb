@@ -63,3 +63,11 @@ users = User.create([{
     user_id: 6, lat: 51.324500, lng: -0.543267, start_date: Date.new(1880, 1, 1),
     end_date: Date.new(1946, 8, 13), accepting_guests: true, city: "London"
   }])
+
+  bookings = Booking.create([{
+    guest_id: 1, site_id: 2, start_date: Date.new(1955, 11, 5),
+    end_date: Date.new(1955, 11, 12), guests: 1
+  }, {
+    guest_id: 3, site_id: 1, start_date: Date.new(1986, 3, 15),
+    end_date: Date.new(1986, 3, 22), guests: 2
+  }])
