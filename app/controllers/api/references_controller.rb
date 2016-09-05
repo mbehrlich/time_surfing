@@ -3,7 +3,7 @@ class Api::ReferencesController < ApplicationController
   before_action :ensure_logged_in, only: [:create]
 
   def index
-    @references = Reference.where(subject_id: params[:user_id])
+    @references = Reference.where(subject_id: params[:user_id]).includes(:author)
   end
 
   def create
