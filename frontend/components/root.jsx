@@ -8,6 +8,7 @@ import JoinContainer from './auth/join_container';
 import Footer from './footer';
 import ProfileContainer from './users/profile_container';
 import { requestUser } from '../actions/user_actions';
+import { requestBookings } from '../actions/booking_actions';
 import AboutContainer from './users/about_container';
 import DashboardContainer from './users/dashboard_container';
 import SiteContainer from './users/site_container';
@@ -22,6 +23,7 @@ class Root extends React.Component {
     this.ensureNotLogin = this.ensureNotLogin.bind(this);
     this.getProfile = this.getProfile.bind(this);
     this.ensureLogin = this.ensureLogin.bind(this);
+    this.getBookings = this.getBookings.bind(this);
   }
 
   ensureNotLogin(nextState, replace) {
@@ -40,6 +42,14 @@ class Root extends React.Component {
     }
   }
 
+  getBookings(nextState, replace) {
+    if (!this.props.store.getState().session.currentUser) {
+      replace('/');
+    } else {
+      this.props.store.dispatch(requestBookings());
+    }
+  }
+
   render() {
     return (
       <Provider store={this.props.store}>
@@ -50,7 +60,7 @@ class Root extends React.Component {
               <Route path="/login" component={LoginContainer} onEnter={this.ensureNotLogin} />
               <Route path="/join" component={JoinContainer} onEnter={this.ensureNotLogin} />
             </Route>
-            <Route path="/dashboard" component={DashboardContainer} onEnter={this.ensureLogin} />
+            <Route path="/dashboard" component={DashboardContainer} onEnter={this.getBookings} />
             <Route path="/edit_profile" component={EditProfileContainer} onEnter={this.ensureLogin} >
               <IndexRoute component={EditAboutContainer} />
               <Route path="/edit_profile/site" component={EditSiteContainer} />

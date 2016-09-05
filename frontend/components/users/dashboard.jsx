@@ -1,5 +1,6 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
+import Bookings from './bookings';
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -73,7 +74,7 @@ class Dashboard extends React.Component {
                     <i className="material-icons">hourglass_empty</i>My Bookings
                   </h4>
                 </section>
-                Bookings go here
+                <Bookings bookings={this.props.bookings} deleteBooking={this.props.deleteBooking} />
               </article>
               <article className="dashboard-section-main">
                 <section className="dashboard-section-heading">
@@ -81,7 +82,7 @@ class Dashboard extends React.Component {
                     <i className="material-icons">all_inclusive</i> My Guests
                   </h4>
                 </section>
-                Guests go here
+                <Bookings bookings={this.props.guests} deleteBooking={this.props.deleteBooking} />
               </article>
             </section>
           </div>

@@ -5,6 +5,8 @@ class Site < ActiveRecord::Base
 
   belongs_to :user
 
+  has_many :bookings
+
   def self.in_bounds(bounds, dates)
     #{"northEast"=>{"lat"=>"", lng=>""}, "southWest"=>{}}
 
