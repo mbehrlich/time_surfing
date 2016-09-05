@@ -20,6 +20,16 @@ class User < ActiveRecord::Base
     through: :site,
     source: :bookings
 
+  has_many :references,
+    primary_key: :id,
+    foreign_key: :subject_id,
+    class_name: :Reference
+
+  has_many :authored_references,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Reference
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
