@@ -16,6 +16,7 @@ import EditProfileContainer from './users/edit_profile_container';
 import EditAboutContainer from './users/edit_about_container';
 import EditSiteContainer from './users/edit_site_container';
 import SearchContainer from './search/search_container';
+import RequestContainer from './users/request_container';
 
 class Root extends React.Component {
   constructor(props) {
@@ -68,6 +69,7 @@ class Root extends React.Component {
             <Route path="/users/:id" component={ProfileContainer} onEnter={this.getProfile}>
               <IndexRoute component={AboutContainer} />
               <Route path="/users/:id/site" component={SiteContainer} />
+              <Route path="/users/:id/request" component={RequestContainer} />
             </Route>
             <Route path="/location_search" component={SearchContainer} />
           </Router>

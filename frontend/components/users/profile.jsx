@@ -31,14 +31,14 @@ class Profile extends React.Component {
       }
     }
     let buttons;
-    if (this.props.loggedIn && this.props.user.site.accepting_guests) {
+    if (this.props.loggedIn && this.props.user.site.accepting_guests && this.props.user.id != this.props.currentUser.id) {
       buttons = (
         <ul className="profile-buttons-list">
-          <li><button className="profile-button">Send Request</button></li>
+          <li><a href={"/#/users/" + this.props.user.id + "/request"}><button className="profile-button">Send Request</button></a></li>
           <li><button className="profile-button">Write Reference</button></li>
         </ul>
       );
-    } else if (this.props.loggedIn) {
+    } else if (this.props.loggedIn && this.props.user.id != this.props.currentUser.id) {
       buttons = (
         <ul className="profile-buttons-list">
           <li><button className="profile-button">Write Reference</button></li>
@@ -60,7 +60,7 @@ class Profile extends React.Component {
               <article className="profile-header">
                 <h1>{this.props.user.username}</h1>
                 <h3>{this.props.user.site.city}</h3>
-                <h3>{this.props.user.year}</h3>
+                <h3>{this.props.user.year < 0 ? String(this.props.user.year).slice(1) + " BC" : this.props.user.year}</h3>
               </article>
               <article className="profile-buttons">
                 <h3>{this.props.user.site.accepting_guests ? "Accepting Guests" : "Not Accepting Guests"}</h3>

@@ -7,6 +7,6 @@ json.user do
   json.id booking.guest.id
   json.firstname booking.guest.firstname
   json.lastname booking.guest.lastname
-  json.year booking.guest.year
+  json.year booking.guest.site.start_date.year
   json.profile booking.guest.profile
 end

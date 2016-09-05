@@ -1,6 +1,7 @@
 class Booking < ActiveRecord::Base
 
-  validates :guest_id, :site_id, :start_date, :end_date, presence: true
+  validates :guest_id, :site_id, :start_date, :end_date, :guests, presence: true
+  validate :number_of_guests
   validate :accepting_guests
   validate :correct_time
 
@@ -18,6 +19,12 @@ class Booking < ActiveRecord::Base
   def accepting_guests
     unless self.site.accepting_guests
       errors.add(:site, " is not accepting guests")
+    end
+  end
+
+  def number_of_guests
+    unless (self.site.max_guests.nil? || self.site.max_guests.to_i >= self.guests.to_i) && self.guests.to_i > 0
+      errors.add(:site, " does not accept that many guests")
     end
   end
 

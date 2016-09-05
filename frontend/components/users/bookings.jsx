@@ -7,7 +7,9 @@ const Bookings = ({bookings, deleteBooking}) => {
   ));
   return (
     <section className="bookings">
-      {bookingEls}
+      <ul>
+        {bookingEls}
+      </ul>
     </section>
   );
 }

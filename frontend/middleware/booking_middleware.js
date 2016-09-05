@@ -1,4 +1,4 @@
-import { BOOKING_CONSTANTS, receiveBookings, receiveBooking, receiveBookingErrors } from '../actions/booking_actions';
+import { BOOKING_CONSTANTS, receiveBookings, receiveBooking, receiveBookingErrors, requestBookings } from '../actions/booking_actions';
 import { fetchBookings, createBooking, deleteBooking } from '../utils/booking_util';
 
 const BookingMiddleware = ({getState, dispatch}) => next => action => {
@@ -12,7 +12,7 @@ const BookingMiddleware = ({getState, dispatch}) => next => action => {
       return next(action);
     case BOOKING_CONSTANTS.CREATE_BOOKING:
       success = (booking) => dispatch(receiveBooking(booking));
-      error = (errors) => dispatch(receiveBookingErrors(errors));
+      error = (errors) => dispatch(receiveBookingErrors(errors.responseJSON));
       createBooking(action.booking, success, error);
       return next(action);
     case BOOKING_CONSTANTS.DELETE_BOOKING:

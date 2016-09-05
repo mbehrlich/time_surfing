@@ -7,6 +7,6 @@ json.user do
   json.id booking.host.id
   json.firstname booking.host.firstname
   json.lastname booking.host.lastname
-  json.city booking.host.city
+  json.city booking.site.city
   json.profile booking.host.profile
 end
