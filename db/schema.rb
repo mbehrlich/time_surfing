@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160905212547) do
+ActiveRecord::Schema.define(version: 20160906004641) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20160905212547) do
   add_index "bookings", ["site_id"], name: "index_bookings_on_site_id", using: :btree
 
   create_table "references", force: :cascade do |t|
-    t.integer  "author_id",   null: false
-    t.integer  "subject_id",  null: false
-    t.boolean  "recommended", null: false
-    t.text     "body",        null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "author_id",                   null: false
+    t.integer  "subject_id",                  null: false
+    t.boolean  "recommended", default: false
+    t.text     "body",                        null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   add_index "references", ["author_id"], name: "index_references_on_author_id", using: :btree

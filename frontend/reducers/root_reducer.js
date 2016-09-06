@@ -6,6 +6,7 @@ import LoadingReducer from './loading_reducer';
 import FilterReducer from './filter_reducer';
 import SpacetimeReducer from './spacetime_reducer';
 import BookingReducer from './booking_reducer';
+import ReferenceReducer from './reference_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
@@ -14,7 +15,8 @@ const RootReducer = combineReducers({
   loading: LoadingReducer,
   filters: FilterReducer,
   spacetime: SpacetimeReducer,
-  bookings: BookingReducer
+  bookings: BookingReducer,
+  references: ReferenceReducer
 });
 
 export default RootReducer;

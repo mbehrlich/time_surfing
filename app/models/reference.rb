@@ -1,6 +1,6 @@
 class Reference < ActiveRecord::Base
 
-  validates :author_id, :subject_id, :recommended, :body, presence: true
+  validates :author_id, :subject_id, :body, presence: true
 
   belongs_to :author,
     primary_key: :id,
@@ -12,5 +12,5 @@ class Reference < ActiveRecord::Base
     foreign_key: :subject_id,
     class_name: :User
 
-  
+
 end

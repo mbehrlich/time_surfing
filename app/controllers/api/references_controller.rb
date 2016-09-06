@@ -13,7 +13,7 @@ class Api::ReferencesController < ApplicationController
     if @reference.save
       render :show
     else
-      render json: @reference.errors.full_messages
+      render json: @reference.errors.full_messages, status: 422
     end
   end
 

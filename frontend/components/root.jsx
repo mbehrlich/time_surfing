@@ -9,6 +9,7 @@ import Footer from './footer';
 import ProfileContainer from './users/profile_container';
 import { requestUser } from '../actions/user_actions';
 import { requestBookings } from '../actions/booking_actions';
+import { requestReferences } from '../actions/reference_actions';
 import AboutContainer from './users/about_container';
 import DashboardContainer from './users/dashboard_container';
 import SiteContainer from './users/site_container';
@@ -17,6 +18,8 @@ import EditAboutContainer from './users/edit_about_container';
 import EditSiteContainer from './users/edit_site_container';
 import SearchContainer from './search/search_container';
 import RequestContainer from './users/request_container';
+import AddReferenceContainer from './users/add_reference_container';
+import ReferencesContainer from './users/references_container';
 
 class Root extends React.Component {
   constructor(props) {
@@ -25,6 +28,7 @@ class Root extends React.Component {
     this.getProfile = this.getProfile.bind(this);
     this.ensureLogin = this.ensureLogin.bind(this);
     this.getBookings = this.getBookings.bind(this);
+    this.getReferences = this.getReferences.bind(this);
   }
 
   ensureNotLogin(nextState, replace) {
@@ -51,6 +55,10 @@ class Root extends React.Component {
     }
   }
 
+  getReferences(nextState, replace) {
+    this.props.store.dispatch(requestReferences(nextState.params.id));
+  }
+
   render() {
     return (
       <Provider store={this.props.store}>
@@ -70,6 +78,8 @@ class Root extends React.Component {
               <IndexRoute component={AboutContainer} />
               <Route path="/users/:id/site" component={SiteContainer} />
               <Route path="/users/:id/request" component={RequestContainer} />
+              <Route path="/users/:id/addreference" component={AddReferenceContainer} />
+              <Route path="/users/:id/references" component={ReferencesContainer} onEnter={this.getReferences} />
             </Route>
             <Route path="/location_search" component={SearchContainer} />
           </Router>

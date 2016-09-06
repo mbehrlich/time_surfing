@@ -35,7 +35,7 @@ class Profile extends React.Component {
       buttons = (
         <ul className="profile-buttons-list">
           <li><a href={"/#/users/" + this.props.user.id + "/request"}><button className="profile-button">Send Request</button></a></li>
-          <li><button className="profile-button">Write Reference</button></li>
+          <li><a href={"/#/users/" + this.props.user.id + "/addreference"}><button className="profile-button">Write Reference</button></a></li>
         </ul>
       );
     } else if (this.props.loggedIn && this.props.user.id != this.props.currentUser.id) {
@@ -71,6 +71,7 @@ class Profile extends React.Component {
                   <ul>
                     <li><a href={"/#/users/" + this.props.user.id} className="profile-navbar-links">about</a></li>
                     <li><a href={"/#/users/" + this.props.user.id + "/site"} className="profile-navbar-links">house</a></li>
+                    <li><a href={"/#/users/" + this.props.user.id + "/references"} className="profile-navbar-links">references</a></li>
                   </ul>
                 </nav>
                 {this.props.children}
