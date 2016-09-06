@@ -424,7 +424,7 @@ User.create({
 })
 
 Site.create({
-  user_id: 30, lat: 43.777226, lng: 11.253499
+  user_id: 30, lat: 43.777226, lng: 11.253499,
   start_date: Date.new(1478, 3, 19), end_date: Date.new(1519, 5, 2),
   max_guests: 100, accepting_guests: true, city: "Florence",
   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

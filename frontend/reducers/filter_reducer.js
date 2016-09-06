@@ -1,7 +1,7 @@
 import { FILTER_CONSTANTS } from '../actions/filter_actions';
 import { merge } from 'lodash';
 
-let defaultState = {bounds: {}, location: {}, time: {from: "1968-01-01", to: "1992-12-31"}}
+let defaultState = {bounds: {}, location: {}, time: {from: "-2000-01-01", to: "3000-12-31"}}
 
 const FilterReducer = (state = defaultState, action) => {
   let newState;
