@@ -611,6 +611,666 @@ Site.create({
   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 })
 
+User.create({
+  username: "Bobby_Lee", password: "12345678", firstname: "Robert E",
+  lastname: "Lee",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473198458/MTE1ODA0OTcxNjk0Nzg2MDYx_crukhm.jpg",
+  birthdate: Date.new(1807, 1, 19), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 43, lat: 38.881048, lng: -77.072276,
+  start_date: Date.new(1840, 5, 19), end_date: Date.new(1870, 10, 12),
+  max_guests: 100, accepting_guests: true, city: "Arlington",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Grant", password: "12345678", firstname: "Ulysses S",
+  lastname: "Grant",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473198578/10463FS_DA_090409_worst-grant_hoyatn.jpg",
+  birthdate: Date.new(1822, 4, 27), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 44, lat: 40.813656, lng: -73.962584,
+  start_date: Date.new(1847, 9, 12), end_date: Date.new(1885, 7, 23),
+  max_guests: 100, accepting_guests: true, city: "New York",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Mark_Twain", password: "12345678", firstname: "Mark",
+  lastname: "Twain",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473198853/MarkTwainWb_ysejos.jpg",
+  birthdate: Date.new(1835, 11, 30), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 45 , lat: 41.766935, lng: -72.701389,
+  start_date: Date.new(1865, 10, 10), end_date: Date.new(1910, 4, 21),
+  max_guests: 100, accepting_guests: true, city: "Hartford",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Edison", password: "12345678", firstname: "Thomas",
+  lastname: "Edison",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473198962/640px-Thomas_Edison2_ifqmgp.jpg",
+  birthdate: Date.new(1847, 2, 11), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 46, lat: 40.565103, lng: -74.337929,
+  start_date: Date.new(1870, 12, 12), end_date: Date.new(1931, 10, 18),
+  max_guests: 100, accepting_guests: true, city: "Menlo Park",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Tesla", password: "12345678", firstname: "Nikola",
+  lastname: "Tesla",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199172/Tesla_circa_1890_ajg5m0.jpg",
+  birthdate: Date.new(1856, 7, 10), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 47, lat: 40.752509, lng: -73.994128,
+  start_date: Date.new(1884, 3, 13), end_date: Date.new(1943, 1, 7),
+  max_guests: 100, accepting_guests: true, city: "New York",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Susan_B", password: "12345678", firstname: "Susan B",
+  lastname: "Anthony",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199499/susan-b-anthony-320x240_yd7oqo.jpg",
+  birthdate: Date.new(1820, 2, 15), gender: "F",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 48, lat: 43.153187, lng: -77.628214,
+  start_date: Date.new(1840, 9, 13), end_date: Date.new(1906, 3, 13),
+  max_guests: 100, accepting_guests: true, city: "Rochester",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "JFK", password: "12345678", firstname: "John F",
+  lastname: "Kennedy",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199731/John_F._Kennedy_48545_vypdsu.png",
+  birthdate: Date.new(1917, 5, 29), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 49, lat: 42.316234, lng: -71.034386,
+  start_date: Date.new(1943, 4, 5), end_date: Date.new(1963, 11, 22),
+  max_guests: 100, accepting_guests: true, city: "Boston",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Nixon", password: "12345678", firstname: "Richard",
+  lastname: "Nixon",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199867/1000509261001_2085990537001_Bio-Biography-Richard-Nixon-SF_mtebby.jpg",
+  birthdate: Date.new(1913, 1, 9), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 50, lat: 33.889455, lng: -117.819554,
+  start_date: Date.new(1940, 7, 4), end_date: Date.new(1994, 4, 22),
+  max_guests: 100, accepting_guests: true, city: "Yorba Linda",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "MLK", password: "12345678", firstname: "Martin Luther",
+  lastname: "King Jr.",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200119/king_vxykdu.jpg",
+  birthdate: Date.new(1929, 1, 15), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 51, lat: 33.755276, lng: -84.372640,
+  start_date: Date.new(1955, 4, 7), end_date: Date.new(1968, 4, 4),
+  max_guests: 100, accepting_guests: true, city: "Atlanta",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Hillary", password: "12345678", firstname: "Hillary",
+  lastname: "Clinton",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200245/MTE4MDAzNDEwMDU4NTc3NDIy_l0fx8j.jpg",
+  birthdate: Date.new(1947, 10, 26), gender: "F",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 52, lat: 34.737246, lng: -92.294671,
+  start_date: Date.new(1970, 10, 13), end_date: Date.new(2031, 5, 17),
+  max_guests: 100, accepting_guests: true, city: "Little Rock",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Trump", password: "12345678", firstname: "Donald",
+  lastname: "Trump",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200508/512501530-republican-presidential-candidate-donald-trump-speaks.jpg.CROP.promo-xlarge2_g8n4nq.jpg",
+  birthdate: Date.new(1946, 6, 14), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 53, lat: 40.762313, lng: -73.974231,
+  start_date: Date.new(1970, 3, 2), end_date: Date.new(2080, 12, 17),
+  max_guests: 100, accepting_guests: true, city: "New York",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Obama", password: "12345678", firstname: "Barack",
+  lastname: "Obama",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200716/photo_n2kwgu.png",
+  birthdate: Date.new(1961, 8, 4), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 54, lat: 38.897451, lng: -77.036862,
+  start_date: Date.new(1990, 10, 1), end_date: Date.new(2062, 12, 10),
+  max_guests: 100, accepting_guests: true, city: "Washington, DC",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Napoleon", password: "12345678", firstname: "Napoleon",
+  lastname: "Bonaparte",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200880/nepolean_bckiy0.jpg",
+  birthdate: Date.new(1769, 8, 15), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 55, lat: 48.402061, lng: 2.699195,
+  start_date: Date.new(1789, 5, 13), end_date: Date.new(1821, 5, 5),
+  max_guests: 100, accepting_guests: true, city: "Paris",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Queen_Marie", password: "12345678", firstname: "Marie",
+  lastname: "Antoinette",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473201094/7afd9b349d2203c3d8e78a2e05a24014_jnboqj.jpg",
+  birthdate: Date.new(1755, 11, 2), gender: "F",
+  description: "Let's eat cake!"
+})
+
+Site.create({
+  user_id: 56, lat: 48.804589, lng: 2.120001,
+  start_date: Date.new(1770, 4, 25), end_date: Date.new(1793, 10, 16),
+  max_guests: 100, accepting_guests: true, city: "Versailles",
+  description: "Let's eat cake!"
+})
+
+User.create({
+  username: "Winston", password: "12345678", firstname: "Winston",
+  lastname: "Churchill",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473201378/7535-004-99D14F9B_fktok9.jpg",
+  birthdate: Date.new(1874, 11, 30), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 57, lat: 51.244090, lng: 0.082450,
+  start_date: Date.new(1896, 5, 28), end_date: Date.new(1965, 1, 24),
+  max_guests: 100, accepting_guests: true, city: "London",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Gandhi", password: "12345678", firstname: "Mahatma",
+  lastname: "Gandhi",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473201954/mahatma_gandhi_imojgt.jpg",
+  birthdate: Date.new(1869, 10, 2), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 58, lat: 19.130133, lng: 72.873643,
+  start_date: Date.new(1900, 7, 3), end_date: Date.new(1948, 1, 30),
+  max_guests: 100, accepting_guests: true, city: "Mumbai",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Mandela", password: "12345678", firstname: "Nelson",
+  lastname: "Mandela",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202245/75567-004-6585DB51_ccgr3s.jpg",
+  birthdate: Date.new(1918, 7, 18), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 59, lat: -26.238550, lng: 27.908709,
+  start_date: Date.new(1960, 4, 12), end_date: Date.new(2013, 12, 5),
+  max_guests: 100, accepting_guests: true, city: "Johannesburg",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Uncle_Joe", password: "12345678", firstname: "Joseph",
+  lastname: "Stalin",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202486/MTE5NTU2MzE2Mzc0NDY4MTA3_uenhlk.jpg",
+  birthdate: Date.new(1878, 12, 18), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 60, lat: 55.752011, lng: 37.617188,
+  start_date: Date.new(1917, 10, 1), end_date: Date.new(1953, 3, 5),
+  max_guests: 100, accepting_guests: true, city: "Moscow",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Chairman_Mao", password: "12345678", firstname: "Mao",
+  lastname: "Zedong",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202725/chairman-mao3_uvebnh.jpg",
+  birthdate: Date.new(1893, 12, 26), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 61, lat: 39.902194, lng: 116.397796,
+  start_date: Date.new(1927, 4, 19), end_date: Date.new(1976, 9, 9),
+  max_guests: 100, accepting_guests: true, city: "Beijing",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Ivan_the_Terrible", password: "12345678", firstname: "Ivan",
+  lastname: "the Terrible",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202955/MTE1ODA0OTcxNjY5NjIwMjM3_omzj2p.jpg",
+  birthdate: Date.new(1530, 9, 3), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 62, lat: 55.734012, lng: 37.631785,
+  start_date: Date.new(1547, 1, 16), end_date: Date.new(1584, 3, 28),
+  max_guests: 100, accepting_guests: true, city: "Moscow",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Dracula", password: "12345678", firstname: "Vlad",
+  lastname: "the Impaler",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204135/Vlad-the-Impaler_yflxuc.jpg",
+  birthdate: Date.new(1431, 11, 15), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 63, lat: 45.514804, lng: 25.367024,
+  start_date: Date.new(1448, 12, 1), end_date: Date.new(1477, 1, 13),
+  max_guests: 100, accepting_guests: true, city: "Wallachia",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Martin_Luther", password: "12345678", firstname: "Martin",
+  lastname: "Luther",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204413/Lucas_Cranach_d._C3_84._-_Martin_Luther__1528__Veste_Coburg___cropped_yo80pg.jpg",
+  birthdate: Date.new(1483, 11, 10), gender: "M",
+  description: "You're probably looking for the other Martin Luther"
+})
+
+Site.create({
+  user_id: 64, lat: 50.973212, lng: 10.319947,
+  start_date: Date.new(1510, 6, 30), end_date: Date.new(1546, 2, 18),
+  max_guests: 100, accepting_guests: true, city: "Eisenach",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Deckard", password: "12345678", firstname: "Rick",
+  lastname: "Deckard",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204696/latest_uvoa1f.jpg",
+  birthdate: Date.new(2018, 3, 19), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 65, lat: 37.778592, lng: -122.427987,
+  start_date: Date.new(2040, 11, 2), end_date: Date.new(2044, 11, 2),
+  max_guests: 100, accepting_guests: true, city: "San Francisco",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Captain_Picard", password: "12345678", firstname: "Jean-Luc",
+  lastname: "Picard",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204855/300px-Jean-Luc_Picard_k0nrgf.jpg",
+  birthdate: Date.new(2305, 7, 13), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 66, lat: 47.407045, lng: 6.170107,
+  start_date: Date.new(2327, 5, 30), end_date: Date.new(2405, 10, 11),
+  max_guests: 100, accepting_guests: true, city: "La Barre",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Captain_Kirk", password: "12345678", firstname: "James T",
+  lastname: "Kirk",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205143/JamesTKirk_qek4fy.jpg",
+  birthdate: Date.new(2233, 3, 22), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 67, lat: 41.660515, lng: -91.524773,
+  start_date: Date.new(2250, 7, 12), end_date: Date.new(2371, 3, 7),
+  max_guests: 100, accepting_guests: true, city: "Iowa City",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Flash", password: "12345678", firstname: "Flash",
+  lastname: "Gordon",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205493/flash-gordon.jpg.824x0_q71_crop-scale_hp2gmq.jpg",
+  birthdate: Date.new(2077, 5, 12), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 68, lat: 41.316131, lng: -72.922386,
+  start_date: Date.new(2100, 5, 3), end_date: Date.new(2150, 7, 5),
+  max_guests: 100, accepting_guests: true, city: "New Haven",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie1", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 69, lat: 42.752201, lng: -120.119654,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie2", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 70, lat: 29.617813, lng: -98.059114,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie3", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 71, lat: 40.251385, lng: -76.086459,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie4", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 72, lat: -11.085231, lng: -45.148961,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie5", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 73, lat: 39.033208, lng: -3.840365,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie6", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 74, lat: 13.844942, lng: 3.015103,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie7", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 75, lat: 44.407440, lng: 66.472131,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie8", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 76, lat: 14.186037, lng: 102.683074,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie9", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 77, lat: 39.441650, lng: 141.354947,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "zombie10", password: "12345678", firstname: "the",
+  lastname: "Undead",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
+  birthdate: Date.new(2450, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 78, lat: -29.758242, lng: 140.651822,
+  start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Everywhere",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Otto", password: "12345678", firstname: "Otto",
+  lastname: "von Bismarck",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473206294/81674-004-1F328DE1_edrfhy.jpg",
+  birthdate: Date.new(1815, 4, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id:79 , lat: 52.546309, lng: 13.373955,
+  start_date: Date.new(1862, 9, 23), end_date: Date.new(1898, 7,  30),
+  max_guests: 100, accepting_guests: true, city: "Berlin",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Columbus", password: "12345678", firstname: "Christopher",
+  lastname: "Columbus",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473206473/1519-christopher-columbus-01-200x273_flip_svpqsf.jpg",
+  birthdate: Date.new(1450, 10, 31), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 80, lat: 44.397448, lng: 8.952629,
+  start_date: Date.new(1492, 10, 12), end_date: Date.new(1506, 5, 20),
+  max_guests: 100, accepting_guests: true, city: "Genoa",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "San Martin", password: "12345678", firstname: "Jose",
+  lastname: "de San Martin",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473206691/3a61d1b9b83e8b7ed1b113dc820e02fe_kbhje7.jpg",
+  birthdate: Date.new(1778, 2, 25), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 81, lat: -34.584628, lng: -58.426799,
+  start_date: Date.new(1814, 8, 10), end_date: Date.new(1850, 8, 17),
+  max_guests: 100, accepting_guests: true, city: "Buenos Aires",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Bolivar", password: "12345678", firstname: "Simon",
+  lastname: "Bolivar",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473206907/Simon_Bolivar1_ioisc1.jpg",
+  birthdate: Date.new(1783, 7, 24), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 82, lat: 10.471085, lng: -66.881098,
+  start_date: Date.new(1800, 3, 1), end_date: Date.new(1830, 12, 17),
+  max_guests: 100, accepting_guests: true, city: "Caracas",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Pancho", password: "12345678", firstname: "Pancho",
+  lastname: "Villa",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473207130/Pancho-Villa_h7anhp.jpg",
+  birthdate: Date.new(1878, 6, 5), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 83, lat: 28.634760, lng: -106.049171,
+  start_date: Date.new(1905, 1, 4), end_date: Date.new(1923, 7, 20),
+  max_guests: 100, accepting_guests: true, city: "Chihuahua",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Suleiman", password: "12345678", firstname: "Suleiman",
+  lastname: "the Magnificent",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473207564/suleiman-the-magnificent_kio9mf.jpg",
+  birthdate: Date.new(1494, 11, 6), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 84, lat: 41.013000, lng: 28.984000,
+  start_date: Date.new(1520, 9, 30), end_date: Date.new(1566, 9, 7),
+  max_guests: 100, accepting_guests: true, city: "Istanbul",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Khan", password: "12345678", firstname: "Genghis",
+  lastname: "Khan",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473207760/2493421_fyaqes.jpg",
+  birthdate: Date.new(1162, 3, 14), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 85, lat: 47.411446, lng: 106.601254,
+  start_date: Date.new(1206, 3, 1), end_date: Date.new(1227, 8, 18),
+  max_guests: 100, accepting_guests: true, city: "Mongolia",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+User.create({
+  username: "Alien", password: "12345678", firstname: "the",
+  lastname: "Alien",
+  profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473208037/200233-alien-big-chap-005_wmwfhh.jpg",
+  birthdate: Date.new(2100, 1, 1), gender: "M",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
+Site.create({
+  user_id: 86, lat: -83.229084, lng: -18.872471,
+  start_date: Date.new(2100, 1, 1), end_date: Date.new(2400, 12, 31),
+  max_guests: 100, accepting_guests: true, city: "Space",
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+})
+
   # User.create({
   #   username: "", password: "12345678", firstname: "",
   #   lastname: "",
@@ -625,3 +1285,7 @@ Site.create({
   #   max_guests: 100, accepting_guests: true, city: "",
   #   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   # })
+
+  1000.times do
+    Reference.create({author_id: rand(86) + 1, subject_id: rand(86) + 1, recommended: (rand(2) == 1 ? true : false), body: Faker::Lorem.paragraph, created_at: Date.new(rand(2016) + 1, rand(12) + 1, rand(27) + 1)})
+  end
