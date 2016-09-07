@@ -5,8 +5,8 @@ const Footer = () => (
 
     <ul className="footer-list">
       <li><a href="/#/about">About</a></li>
-      <li><a href="/#/howitworks">How It Works</a></li>
-      <li><a href="/#/safety">Safety</a></li>
+      <li><a href="/#/about/howitworks">How It Works</a></li>
+      <li><a href="/#/about/safety">Safety</a></li>
     </ul>
     <p>&copy; 2016 Matthew Ehrlich</p>
   </footer>

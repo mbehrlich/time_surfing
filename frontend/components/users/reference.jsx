@@ -6,11 +6,11 @@ const Reference = ({reference}) => {
   return (
     <article className="reference-item">
       <figure className="reference-pic">
-        <img src={reference.author.profile ? reference.author.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png"} />
+        <a href={"/#/users/" + reference.author.id}><img src={reference.author.profile ? reference.author.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png"} /></a>
       </figure>
       <section className="reference-main">
         <section className="reference-header">
-          <h4>{reference.author.firstname} {reference.author.lastname}</h4>
+          <h4><a href={"/#/users/" + reference.author.id}>{reference.author.firstname} {reference.author.lastname}</a></h4>
           <h4 className={reference.recommended ? "good-reference" : "bad-reference"} >{reference.recommended ? "Recommended" : "Not Recommended"}</h4>
           <h5>{creationDate.toDateString()}</h5>
         </section>

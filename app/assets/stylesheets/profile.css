@@ -327,6 +327,10 @@
   margin: 5px;
 }*/
 
+.reference-header a:hover {
+  text-decoration: underline;
+}
+
 .reference-recommend {
   margin-bottom: 20px;
 }

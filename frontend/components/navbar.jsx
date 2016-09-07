@@ -37,22 +37,40 @@ class Navbar extends React.Component {
 
 
   componentDidMount() {
-    let input = document.getElementById('nav-search')
+    this.input = document.getElementById('nav-search')
     let options = {types: ['(cities)']};
-    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+    this.autocomplete = new google.maps.places.Autocomplete(this.input, options);
     this.autocomplete.addListener('place_changed', this.search);
   }
 
   search() {
     let place = this.autocomplete.getPlace();
-    this.setState({
-      // location: place.query,
-      lat: place.geometry.location.lat(),
-      lng: place.geometry.location.lng(),
-      location: ""
-    });
-    this.props.updateSpacetime(this.state);
-    hashHistory.push("/location_search");
+    if (place.geometry) {
+      this.setState({
+        // location: place.query,
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng(),
+        location: ""
+      });
+      this.props.updateSpacetime(this.state);
+      hashHistory.push("/location_search");
+    } else {
+      let service = new google.maps.places.AutocompleteService();
+      let placeService = new google.maps.places.PlacesService(this.input);
+      let placeRequest = (predictions, status) => {
+        let request = { placeId: predictions[0].place_id };
+        placeService.getDetails(request, (details) => {
+          this.setState({
+            lat: details.geometry.location.lat(),
+            lng: details.geometry.location.lng(),
+            location: ""
+          });
+          this.props.updateSpacetime(this.state);
+          hashHistory.push("/location_search");
+        });
+      };
+      service.getQueryPredictions({input: this.input.value}, placeRequest);
+    }
   }
 
   updateSearch(e) {
@@ -61,6 +79,7 @@ class Navbar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+
   }
 
 

@@ -2,6 +2,16 @@ import React from 'react';
 import Reference from './reference';
 
 const References = ({references}) => {
+  let ordering = (a, b) => {
+    if (a.created_at < b.created_at) {
+      return 1;
+    } else if (a.created_at > b.created_at) {
+      return -1;
+    } else {
+      return 0;
+    }
+  };
+  references.sort(ordering);
   let referenceEls = references.map((reference) => (
     <li key={reference.id}><Reference reference={reference} /></li>
   ));
