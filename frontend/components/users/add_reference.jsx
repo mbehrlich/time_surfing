@@ -66,12 +66,12 @@ class AddReference extends React.Component {
             <section className="reference-recommend">
               <label>Would you recommend this person?</label>
               <label>
-                Yes
                 <input type="radio" name="recommended" value="true" checked={this.state.recommended === "true" ? true : false} onChange={this.updateRecommend}  />
+                Yes
               </label>
               <label>
-                No
                 <input type="radio" name="recommended" value="false" checked={this.state.recommended === "false" ? true : false} onChange={this.updateRecommend} />
+                No
               </label>
             </section>
             <label>

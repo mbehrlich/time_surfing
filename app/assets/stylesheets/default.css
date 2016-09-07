@@ -55,18 +55,21 @@ body {
 }
 
 .nav-buttons {
+  display: flex;
   /*float: right;*/
 }
 
+
+
 .nav-buttons li {
-  float: left;
+  /*float: left;*/
   margin-left: 15px;
   position: relative;
 }
 
 .nav-buttons li button {
   padding: 5px 20px;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #afb8c3;
@@ -88,7 +91,7 @@ body {
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin-top: 14px;
+  /*margin-top: 14px;*/
   margin-right: 4px;
 
   border-radius: 100%;
@@ -125,7 +128,7 @@ body {
   border-right: 1px solid #afb8c3;
   background-color: white;
   width: 150px;
-  top: 60px;
+  top: 50px;
   right: 0px;
   box-sizing: border-box;
 }
