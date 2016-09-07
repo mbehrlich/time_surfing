@@ -20,6 +20,10 @@ import SearchContainer from './search/search_container';
 import RequestContainer from './users/request_container';
 import AddReferenceContainer from './users/add_reference_container';
 import ReferencesContainer from './users/references_container';
+import Info from './about/info';
+import About from './about/about';
+import HowItWorks from './about/how_it_works';
+import Safety from './about/safety';
 
 class Root extends React.Component {
   constructor(props) {
@@ -82,6 +86,11 @@ class Root extends React.Component {
               <Route path="/users/:id/references" component={ReferencesContainer} onEnter={this.getReferences} />
             </Route>
             <Route path="/location_search" component={SearchContainer} />
+            <Route path="/about" component={Info} >
+              <IndexRoute component={About} />
+              <Route path="/about/howitworks" component={HowItWorks} />
+              <Route path="/about/safety" component={Safety} />
+            </Route>
           </Router>
           <Footer />
         </div>

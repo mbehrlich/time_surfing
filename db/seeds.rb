@@ -1286,6 +1286,7 @@ Site.create({
   #   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   # })
 
+
   1000.times do
     Reference.create({author_id: rand(86) + 1, subject_id: rand(86) + 1, recommended: (rand(2) == 1 ? true : false), body: Faker::Lorem.paragraph, created_at: Date.new(rand(2016) + 1, rand(12) + 1, rand(27) + 1)})
   end

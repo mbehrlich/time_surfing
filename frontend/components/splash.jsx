@@ -72,7 +72,7 @@ class Splash extends React.Component {
             <figure className="figure-left figure">
               <figcaption className="testimonial-caption">
                 <h2>Explore the Past</h2>
-                <button><strong>How it Works</strong></button>
+                <a href="/#/about/howitworks"><button><strong>How it Works</strong></button></a>
               </figcaption>
             </figure>
             <aside className="testimonial-aside">
@@ -86,8 +86,7 @@ class Splash extends React.Component {
                   <figcaption>Marty</figcaption>
                 </figure>
                 <figure className="testimonial-user2 testimonial-user">
-                  <img src="
-http://res.cloudinary.com/dush6wf6z/image/upload/v1472768597/doc_brown_xz9jjg.png" />
+                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768597/doc_brown_xz9jjg.png" />
                   <figcaption>Doc Brown</figcaption>
                 </figure>
               </section>
@@ -103,16 +102,17 @@ http://res.cloudinary.com/dush6wf6z/image/upload/v1472768597/doc_brown_xz9jjg.pn
               <h5>connected with</h5>
                 <div className="testimonial-symbol">
                   <i className="material-icons">hourglass_empty</i>
-                </div>          <section className="testimonial-users group">
-                <figure className="testimonial-user1 testimonial-user">
-                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768591/Bill_d9vzzg.jpg" />
-                  <figcaption>Bill</figcaption>
-                </figure>
-                <figure className="testimonial-user2 testimonial-user">
-                  <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768614/ted_no40js.png" />
-                  <figcaption>Ted</figcaption>
-                </figure>
-              </section>
+                </div>
+                <section className="testimonial-users group">
+                  <figure className="testimonial-user1 testimonial-user">
+                    <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768591/Bill_d9vzzg.jpg" />
+                    <figcaption>Bill</figcaption>
+                  </figure>
+                  <figure className="testimonial-user2 testimonial-user">
+                    <img src="http://res.cloudinary.com/dush6wf6z/image/upload/v1472768614/ted_no40js.png" />
+                    <figcaption>Ted</figcaption>
+                  </figure>
+                </section>
               <p className="testimonial-location">
                 in San Dimas, 1989
               </p>
@@ -122,7 +122,7 @@ http://res.cloudinary.com/dush6wf6z/image/upload/v1472768597/doc_brown_xz9jjg.pn
             <figure className="figure-right figure">
               <figcaption className="testimonial-caption">
                 <h2>Visit the Future</h2>
-                <button><strong>Safety</strong></button>
+                <a href="/#/about/safety"><button><strong>Safety</strong></button></a>
               </figcaption>
             </figure>
 
