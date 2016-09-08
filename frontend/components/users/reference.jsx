@@ -12,7 +12,7 @@ const Reference = ({reference}) => {
         <section className="reference-header">
           <h4><a href={"/#/users/" + reference.author.id}>{reference.author.firstname} {reference.author.lastname}</a></h4>
           <h4 className={reference.recommended ? "good-reference" : "bad-reference"} >{reference.recommended ? "Recommended" : "Not Recommended"}</h4>
-          <h5>{creationDate.toDateString()}</h5>
+          <h5>{reference.created_at.slice(0, 2) === "00" ? creationDate.toDateString().slice(0, 11) + creationDate.toDateString().slice(13) : creationDate.toDateString()}</h5>
         </section>
         <section className="reference-body">
           <p>{reference.body}</p>

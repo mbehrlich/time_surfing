@@ -14,7 +14,7 @@ class Map extends React.Component {
       zoom: 6
     };
 
-    if (this.props.spacetime.era === "Antiquity" || this.props.spacetime.era === "Middle_Ages" || this.props.spacetime.era === "Renaissance" || this.props.spacetime.era === "Englightenment") {
+    if (this.props.spacetime.era === "Antiquity" || this.props.spacetime.era === "Middle_Ages" || this.props.spacetime.era === "Renaissance" || this.props.spacetime.era === "Enlightenment") {
       options.styles = [
         {
           "featureType": "transit",
