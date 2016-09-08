@@ -4,9 +4,13 @@
 }
 
 body {
-    font-family: postApocalypse;
+    /*font-family: postApocalypse;*/
     background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473313041/2dyW7wb_fu2xq3.jpg);
     background-repeat: repeat;
+}
+
+h1, h2, h3, .logo {
+  font-family: postApocalypse;
 }
 
 .background {

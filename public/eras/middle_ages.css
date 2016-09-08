@@ -5,16 +5,19 @@
 
 body {
     font-family: middleAges;
-    background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473311585/fleur-de-lys-pattern_uyhurm.png);
+    background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473349356/2951bb593d2ba276f9436fb791b5be59_d6iune.jpg);
     background-repeat: repeat;
 }
 
 .background {
   background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768618/middleages_jgqi3r.jpg);
   background-position: top;
-
 }
 
 .profile-header {
-  color: white;
+  background-color: white;
+  border: 1px solid #a3b8c3;
+  box-shadow: 2px 2px 7px 1px;
+  padding: 20px;
+  /*font-weight: bold;*/
 }

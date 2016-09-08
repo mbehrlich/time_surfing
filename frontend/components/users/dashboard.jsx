@@ -51,6 +51,13 @@ class Dashboard extends React.Component {
       start_date: eraMapping[value][0],
       end_date: eraMapping[value][1]
     };
+    if (name === "Middle_Ages") {
+      newSpacetime.lat = 48.85;
+      newSpacetime.lng = 2.35;
+    } else if (name === "Antiquity") {
+      newSpacetime.lat = 33.5;
+      newSpacetime.lng = 36.28;
+    }
     this.setState(newSpacetime, () => {
       this.props.updateSpacetime(this.state)
       if (name) {
