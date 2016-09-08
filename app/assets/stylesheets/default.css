@@ -27,7 +27,6 @@ body {
 }
 
 .logo {
-
   font-size: 24px;
   padding: 15px 0;
 }
@@ -40,6 +39,7 @@ body {
 .nav-search {
 
 }
+
 
 .nav-search input {
   border-radius: 20px;
@@ -58,6 +58,11 @@ body {
   display: flex;
   /*float: right;*/
 }
+
+.nav-icon {
+  display: none;
+}
+
 
 
 
@@ -106,6 +111,8 @@ body {
   left: 30px;
   bottom: -10px;
 }
+
+
 
 .material-icons.md-18 {
   font-size: 18px;
@@ -165,6 +172,112 @@ body {
 .popup {
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  .nav-buttons {
+    display:none;
+  }
+
+
+  .search-icon {
+    margin-left: auto;
+  }
+
+  .nav-icon {
+    display: block;
+    padding: 5px 5px 1px 5px;
+    margin-right: 10px;
+    border: 1px solid #afb8c3;
+    border-radius: 5px;
+  }
+
+  .nav-icon:hover {
+    border: 2px solid #afb8c3;
+    padding: 4px 4px 0 4px;
+    background-color: #f2f2f2
+  }
+
+  .nav-icon:active {
+    background-color: #afb8c3;
+  }
+
+  .nav-buttons-resp {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    right: 10px;
+    top: 60px;
+    border-top: 1px solid #afb8c3;
+    border-right: 1px solid #afb8c3;
+    border-left: 1px solid #afb8c3;
+    width: 150px;
+    box-sizing: border-box;
+  }
+
+  .nav-buttons-resp li {
+    border-bottom: 1px solid #afb8c3;
+    width: 100%;
+  }
+
+  .nav-buttons-resp button {
+    padding: 5px 20px 5px 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .nav-buttons-resp button:hover {
+    background-color: #f2f2f2;
+  }
+
+  .nav-buttons-resp button:active {
+    background-color: #afb8c3;
+  }
+
+  .user-icon {
+    display: none;
+  }
+
+  .navbar-dropdown {
+    top: 35px;
+    right: -1px;
+  }
+
+  .nav-search-resp {
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin: 0 auto;
+    top: 60px;
+    width: 100%;
+    border-bottom: 1px solid #afb8c3;
+  }
+
+  .nav-search-resp input {
+    border-radius: 20px;
+    display: block;
+    width: 300px;
+    /*margin: 0 auto;*/
+    border: 1px solid #aeb5ba;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    color: #929ead;
+    background-color: white;
+    width: 300;
+    margin: 0 auto;
+  }
+
+}
+
 
 /*Body*/
 

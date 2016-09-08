@@ -5,7 +5,6 @@ class Navbar extends React.Component {
 
   constructor(props) {
     super(props);
-    this.iconClick = this.iconClick.bind(this);
     this.state = {
       lat: this.props.spacetime.lat,
       lng: this.props.spacetime.lng,
@@ -13,11 +12,16 @@ class Navbar extends React.Component {
       start_date: this.props.spacetime.start_date,
       end_date: this.props.spacetime.end_date,
       era: this.props.spacetime.era,
-      menu: false
+      menu: false,
+      rmenu: false,
+      smenu: false
     };
     this.initial = this.state;
     this.search = this.search.bind(this);
     this.updateSearch = this.updateSearch.bind(this);
+    this.iconClick = this.iconClick.bind(this);
+    this.resClick = this.resClick.bind(this);
+    this.searchClick = this.searchClick.bind(this);
   }
 
   iconClick(e) {
@@ -30,6 +34,40 @@ class Navbar extends React.Component {
     e.preventDefault();
     if (this.state.menu === false) {
       this.setState({menu: true});
+      document.addEventListener("click", removeClick);
+    } else {
+      removeClick();
+    }
+  }
+
+  resClick(e) {
+    let removeClick = () => {
+      if (this.state.rmenu === true) {
+        this.setState({rmenu: false, menu: false});
+      }
+      document.removeEventListener("click", removeClick);
+    };
+    e.preventDefault();
+    if (this.state.rmenu === false) {
+      this.setState({rmenu: true, menu: true});
+
+      document.addEventListener("click", removeClick);
+    } else {
+      removeClick();
+    }
+
+  }
+
+  searchClick(e) {
+    let removeClick = () => {
+      if (this.state.smenu === true) {
+        this.setState({smenu: false});
+      }
+      document.removeEventListener("click", removeClick);
+    };
+    e.preventDefault();
+    if (this.state.smenu === false) {
+      this.setState({smenu: true}, () => document.getElementById("nav-search").focus());
       document.addEventListener("click", removeClick);
     } else {
       removeClick();
@@ -87,7 +125,6 @@ class Navbar extends React.Component {
   }
 
 
-
   render() {
     let style;
     if (this.props.spacetime.era === "All_Time") {
@@ -110,10 +147,12 @@ class Navbar extends React.Component {
     let logged_in = (this.props.currentUser ? true : false);
     let navButtons;
     let navbarDropdown = (this.state.menu ? "navbar-dropdown popup" : "navbar-dropdown not-popup");
+    let respDropdown = (this.state.rmenu ? "nav-buttons-resp" : "nav-buttons");
+    let searchDropdown = (this.state.smenu ? "nav-search-resp" : "nav-search");
     if (logged_in) {
       let profilePic = (this.props.currentUser.profile ? this.props.currentUser.profile : "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768599/profile_default_nxjli6.png");
       navButtons = (
-        <ul className="nav-buttons">
+        <ul className={respDropdown}>
           <li><button onClick={this.props.logoutUser} >Log out</button></li>
           <li>
             <a className="user-icon" href="#" onClick={this.iconClick}>
@@ -131,7 +170,7 @@ class Navbar extends React.Component {
       );
     } else {
       navButtons = (
-        <ul className="nav-buttons">
+        <ul className={respDropdown}>
           <li><a href="/#/join"><button>Join</button></a></li>
           <li><a href="/#/login"><button>Log in</button></a></li>
           <li><button onClick={this.props.loginUser}>Guest</button></li>
@@ -143,9 +182,13 @@ class Navbar extends React.Component {
         {style}
         <nav className="navbar">
           <div className="logo"><a href="/#/"><i className="material-icons logo-icon">hourglass_empty</i> Timesurfing</a></div>
-          <form className="nav-search" onSubmit={this.handleSubmit} >
+          <button className="nav-icon search-icon" onClick={this.searchClick}><i className="material-icons">search</i></button>
+          <form className={searchDropdown} onSubmit={this.handleSubmit} >
             <input type="text" id="nav-search" placeholder="Where do you want to go?" value={this.state.location} onChange={this.updateSearch} />
           </form>
+          <button className="nav-icon" onClick={this.resClick}>
+            <i className="material-icons">menu</i>
+          </button>
           {navButtons}
         </nav>
       </section>
