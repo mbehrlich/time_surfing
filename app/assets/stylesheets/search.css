@@ -1,7 +1,25 @@
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 69px;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .search-main {
   margin-bottom: 20px;
   width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .search-main {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 
 .search-form {
@@ -14,6 +32,7 @@
 
 .date-search {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .date-search button {
@@ -26,6 +45,12 @@
   height: 35px;
   text-align: center;
   align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .date-search button {
+    margin-top: 10px;
+  }
 }
 
 .date-search-input {
@@ -58,15 +83,6 @@
   background-color: #afb8c3;
 }
 
-.flex-container {
-  display: flex;
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 69px;
-  justify-content: space-around;
-  height: 100%;
-}
 
 /*results*/
 
@@ -81,6 +97,7 @@
 .search-result {
   margin-bottom: 15px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   padding-top: 10px;
   border-top: 1px solid #afb8c3;
@@ -101,6 +118,12 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .mini-accepting {
+    margin-left: 0;
+  }
+}
+
 .mini-accept {
   color: green;
 }
@@ -117,6 +140,13 @@
   margin: 20px 0 20px 20px;
   background-color: white;
   box-shadow: 2px 2px 10px 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-map {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 .map {
