@@ -98,9 +98,14 @@
   margin-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   padding-top: 10px;
   border-top: 1px solid #afb8c3;
+}
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    flex-direction: column;
+  }
 }
 
 .mini-profile {
