@@ -1,0 +1,20 @@
+@font-face {
+    font-family: middleAges;
+    src: url(./middle_ages.ttf);
+}
+
+body {
+    font-family: middleAges;
+    background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473311585/fleur-de-lys-pattern_uyhurm.png);
+    background-repeat: repeat;
+}
+
+.background {
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768618/middleages_jgqi3r.jpg);
+  background-position: top;
+
+}
+
+.profile-header {
+  color: white;
+}

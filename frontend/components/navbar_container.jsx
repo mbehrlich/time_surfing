@@ -3,9 +3,9 @@ import { logoutUser, loginUser } from '../actions/session_actions';
 import { updateSpacetime } from '../actions/spacetime_actions';
 import Navbar from './navbar';
 
-const mapStateToProps = (store) => ({
-  currentUser: store.session.currentUser,
-  spacetime: store.spacetime
+const mapStateToProps = (state) => ({
+  currentUser: state.session.currentUser,
+  spacetime: state.spacetime
 });
 
 const mapDispatchToProps = (dispatch) => ({

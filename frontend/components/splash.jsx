@@ -16,12 +16,13 @@ class Splash extends React.Component {
     };
     this.search = this.search.bind(this);
     this.updateSearch = this.updateSearch.bind(this);
+    this.updateEra = this.updateEra.bind(this);
   }
 
   componentDidMount() {
-    let input = document.getElementById('front-search')
+    this.input = document.getElementById('front-search')
     let options = {types: ['(cities)']};
-    this.autocomplete = new google.maps.places.Autocomplete(input, options);
+    this.autocomplete = new google.maps.places.Autocomplete(this.input, options);
     this.autocomplete.addListener('place_changed', this.search);
   }
 
@@ -37,17 +38,57 @@ class Splash extends React.Component {
 
   search() {
     let place = this.autocomplete.getPlace();
-    this.setState({
-      // location: place.query,
-      lat: place.geometry.location.lat(),
-      lng: place.geometry.location.lng()
-    });
-    this.props.updateSpacetime(this.state);
-    hashHistory.push("/location_search");
+    if (place.geometry) {
+      this.setState({
+        // location: place.query,
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng(),
+        location: ""
+      });
+      this.props.updateSpacetime(this.state);
+      hashHistory.push("/location_search");
+    } else {
+      let service = new google.maps.places.AutocompleteService();
+      let placeService = new google.maps.places.PlacesService(this.input);
+      let placeRequest = (predictions, status) => {
+        let request = { placeId: predictions[0].place_id };
+        placeService.getDetails(request, (details) => {
+          this.setState({
+            lat: details.geometry.location.lat(),
+            lng: details.geometry.location.lng(),
+            location: ""
+          });
+          this.props.updateSpacetime(this.state);
+          hashHistory.push("/location_search");
+        });
+      };
+      service.getQueryPredictions({input: this.input.value}, placeRequest);
+    }
   }
 
   updateSearch(e) {
     this.setState({location: e.target.value});
+  }
+
+  updateEra(e) {
+    let eraMapping = {
+      All_Time: ["-2000-01-01", "3000-12-31"],
+      Antiquity: ["-2000-01-01", "0450-12-31"],
+      Middle_Ages: ["0451-01-01", "1400-12-31"],
+      Renaissance: ["1401-01-01", "1700-12-31"],
+      Enlightenment: ["1701-01-01", "1860-12-31"],
+      Modern_Era: ["1861-01-01", "2017-12-31"],
+      Space_Age: ["2018-01-01", "2430-12-31"],
+      Post_Apocalypse: ["2431-01-01", "3000-12-31"]
+    }
+    let newSpacetime = {
+      era: e.target.value,
+      start_date: eraMapping[e.target.value][0],
+      end_date: eraMapping[e.target.value][1]
+    };
+    this.setState(newSpacetime, () => {
+      this.props.updateSpacetime(this.state)
+    });
   }
 
   render() {
@@ -58,11 +99,22 @@ class Splash extends React.Component {
         <section className="background">
           <main className="container">
             <header className="header">
-              <h1 className="main-title">Stay with Locals and Meet Time Travelers</h1>
-              <h3 className="secondary-title">Share authentic Time Travel Experiences</h3>
+              <div className="splash-titles">
+                <h1 className="main-title">Stay with Locals and Meet Time Travelers</h1>
+                <h3 className="secondary-title">Share authentic Time Travel Experiences</h3>
+              </div>
               <form onSubmit={this.handleSubmit} >
                 <input type="text" id="front-search" className="front-search" placeholder="Where do you want to go?" value={this.state.location} onChange={this.updateSearch} />
-
+                <select className="era-select" value={this.state.era} onChange={this.updateEra}>
+                  <option value="All_Time" >All Time</option>
+                  <option value="Antiquity" >Antiquity</option>
+                  <option value="Middle_Ages" >Middle Ages</option>
+                  <option value="Renaissance" >Renaissance</option>
+                  <option value="Enlightenment">Enlightenment</option>
+                  <option value="Modern_Era" >Modern Era</option>
+                  <option value="Space_Age" >Space Age</option>
+                  <option value="Post_Apocalypse" >Post-Apocalypse</option>
+                </select>
               </form>
             </header>
           </main>

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: renaissance;
+    src: url(./renaissance.ttf);
+}
+
+body {
+    font-family: renaissance;
+    background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473311960/202805_r1wxnd.jpg);
+    background-repeat: repeat;
+}
+
+.background {
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473296063/Canaletto_Grand_Canal_from_Palazzo_Flangini_-_JPGM_nvosdo.jpg);
+}

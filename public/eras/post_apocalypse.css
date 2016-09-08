@@ -1,0 +1,15 @@
+@font-face {
+    font-family: postApocalypse;
+    src: url(./post_apocalypse.otf);
+}
+
+body {
+    font-family: postApocalypse;
+    background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473313041/2dyW7wb_fu2xq3.jpg);
+    background-repeat: repeat;
+}
+
+.background {
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473312894/44251_syfwyu.jpg);
+  background-position: center;
+}

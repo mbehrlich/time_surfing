@@ -65,6 +65,7 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .cool-era {
@@ -76,14 +77,29 @@
 
 .antiquity {
   background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768602/antiquity_duq6kr.jpg);
+  font-family: 'Cormorant SC', serif;
 }
+
+@font-face {
+    font-family: middleAges;
+    src: url(/eras/middle_ages.ttf);
+}
+
 
 .midage {
   background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768618/middleages_jgqi3r.jpg);
+  font-family: middleAges;
 }
+
+@font-face {
+    font-family: postApocalypse;
+    src: url(/eras/post_apocalypse.otf);
+}
+
 
 .postapoc {
   background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1472768598/postapoc_anwhzk.jpg);
+  font-family: postApocalypse;
 }
 
 .era-caption {

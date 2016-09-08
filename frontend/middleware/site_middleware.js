@@ -1,5 +1,6 @@
 import { SITE_CONSTANTS, requestSites, receiveSites, receiveSiteErrors } from '../actions/site_actions';
-import { FILTER_CONSTANTS } from '../actions/filter_actions';
+import { FILTER_CONSTANTS, updateDates } from '../actions/filter_actions';
+import { SPACETIME_CONSTANTS } from '../actions/spacetime_actions';
 import { receiveUser, receiveErrors } from '../actions/session_actions';
 import { updateSite, fetchSites } from '../utils/site_util';
 
@@ -26,6 +27,9 @@ const SiteMiddleware = ({getState, dispatch}) => next => action => {
       next(action);
       dispatch(requestSites());
       break;
+    case SPACETIME_CONSTANTS.UPDATE_SPACETIME:
+      dispatch(updateDates(action.spacetime.start_date, action.spacetime.end_date));
+      return next(action);
     default:
       return next(action);
   }

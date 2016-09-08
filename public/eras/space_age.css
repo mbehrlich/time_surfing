@@ -1,0 +1,14 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/v1473294479/1-Tileable_p4y9bt.jpg);
+  background-repeat: repeat;
+}
+
+.background {
+  background-image: url(http://res.cloudinary.com/dush6wf6z/image/upload/c_scale,w_3000/v1473296851/space-05_dnpou8.jpg);
+  background-position: center;
+}
+
+.profile-header {
+  color: white;
+}

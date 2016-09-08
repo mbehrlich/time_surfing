@@ -300,6 +300,10 @@ h5 {
   margin: 0 auto;
 }
 
+/*.splash-titles {
+  background-image: radial-gradient(black 50%, transparent 70%);
+}*/
+
 .header h1 {
   text-align: center;
   margin-top: 100px;
@@ -312,7 +316,7 @@ h5 {
 .front-search {
   display: block;
   width: 300px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid #aeb5ba;
   border-radius: 5px;
   padding: 5px 8px;
@@ -323,6 +327,16 @@ h5 {
 
 .front-search:focus {
   border: 1px solid #287fb8;
+}
+
+.era-select {
+  background-color: white;
+  color: #929ead;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #287fb8;
+
 }
 
 /*testimonials */

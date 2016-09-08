@@ -15,6 +15,7 @@ class Navbar extends React.Component {
       era: this.props.spacetime.era,
       menu: false
     };
+    this.initial = this.state;
     this.search = this.search.bind(this);
     this.updateSearch = this.updateSearch.bind(this);
   }
@@ -50,7 +51,10 @@ class Navbar extends React.Component {
         // location: place.query,
         lat: place.geometry.location.lat(),
         lng: place.geometry.location.lng(),
-        location: ""
+        location: "",
+        era: this.props.spacetime.era,
+        start_date: this.props.spacetime.start_date,
+        end_date: this.props.spacetime.end_date
       });
       this.props.updateSpacetime(this.state);
       hashHistory.push("/location_search");
@@ -63,7 +67,8 @@ class Navbar extends React.Component {
           this.setState({
             lat: details.geometry.location.lat(),
             lng: details.geometry.location.lng(),
-            location: ""
+            location: "",
+            era: this.props.spacetime.era
           });
           this.props.updateSpacetime(this.state);
           hashHistory.push("/location_search");
@@ -79,11 +84,29 @@ class Navbar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
   }
 
 
+
   render() {
+    let style;
+    if (this.props.spacetime.era === "All_Time") {
+      style = (<div></div>);
+    } else if (this.props.spacetime.era === "Antiquity") {
+      style = (<link href="eras/antiquity.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Middle_Ages") {
+      style = (<link href="eras/middle_ages.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Renaissance") {
+      style = (<link href="eras/renaissance.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Enlightenment") {
+      style = (<link href="eras/enlightenment.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Modern_Era") {
+      style = (<link href="eras/modern_era.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Space_Age") {
+      style = (<link href="eras/space_age.css" rel="stylesheet" type="text/css" />);
+    } else if (this.props.spacetime.era === "Post_Apocalypse") {
+      style = (<link href="eras/post_apocalypse.css" rel="stylesheet" type="text/css" />);
+    }
     let logged_in = (this.props.currentUser ? true : false);
     let navButtons;
     let navbarDropdown = (this.state.menu ? "navbar-dropdown popup" : "navbar-dropdown not-popup");
@@ -117,6 +140,7 @@ class Navbar extends React.Component {
     }
     return (
       <section className="nav-container">
+        {style}
         <nav className="navbar">
           <div className="logo"><a href="/#/"><i className="material-icons logo-icon">hourglass_empty</i> Timesurfing</a></div>
           <form className="nav-search" onSubmit={this.handleSubmit} >

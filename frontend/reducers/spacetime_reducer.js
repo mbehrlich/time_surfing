@@ -1,7 +1,9 @@
 import { SPACETIME_CONSTANTS } from '../actions/spacetime_actions';
 import { merge } from 'lodash';
 
-let defaultState = {lat: 37, lng: -122, start_date: "-2000-01-01", end_date: (new Date()).toISOString().slice(0, 10)}
+// (new Date()).toISOString().slice(0, 10)
+
+let defaultState = {lat: 37, lng: -122, start_date: "-2000-01-01", end_date: "3000-12-31", era: "All_Time"}
 
 const SpacetimeReducer = (state = defaultState, action) => {
   let newState;
