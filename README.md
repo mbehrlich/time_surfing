@@ -10,10 +10,13 @@ The frontend is done with React and Redux. I used googleapis for the search and 
 ### Single-page app
 
 Timesurfing uses react and redux to navigate throughout the site without actually changing the site, for a smoother experience. Timesurfing also uses a responsive design to ensure a good experience on mobile as well.
+
 ### User authentication and signup
 Users are authenticated using bcrypt. There is a "guest" login so visitors may navigate the site without having to create their own user. Users may edit their profile. Cloudinary is utilized so that users may upload their own profile pictures. Google places api is used so that when users enter their location, the latitude and longitude is extracted to put them on the search map.
 
 ![image of profile](docs/profile.png)
+
+### Sites
 
 "Users" and "Sites" are actually split into two separate models in the database, but the controller combines them into a single jbuilder. This makes the process of finding and editing users and sites easier on the backend. The associated react components also combine users and sites into a single object in the redux store.
 
