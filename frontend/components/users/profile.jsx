@@ -7,7 +7,7 @@ class Profile extends React.Component {
   }
 
   render() {
-    if (!this.props.user) {
+    if (!this.props.user || this.props.errors.length > 0) {
       if (this.props.errors.length > 0) {
         let errors = this.props.errors.map((error, idx) => (
           <li key={idx}>{error}</li>
@@ -41,7 +41,7 @@ class Profile extends React.Component {
     } else if (this.props.loggedIn && this.props.user.id != this.props.currentUser.id) {
       buttons = (
         <ul className="profile-buttons-list">
-          <li><button className="profile-button">Write Reference</button></li>
+          <li><a href={"/#/users/" + this.props.user.id + "/addreference"}><button className="profile-button">Write Reference</button></a></li>
         </ul>
       );
     } else {
