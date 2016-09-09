@@ -9,7 +9,7 @@ The frontend is done with React and Redux. I used googleapis for the search and 
 
 ### Single-page app
 
-Timesurfing uses react and redux to navigate throughout the site without actually changing the site, for a smoother experience.
+Timesurfing uses react and redux to navigate throughout the site without actually changing the site, for a smoother experience. Timesurfing also uses a responsive design to ensure a good experience on mobile as well.
 ### User authentication and signup
 Users are authenticated using bcrypt. There is a "guest" login so visitors may navigate the site without having to create their own user. Users may edit their profile. Cloudinary is utilized so that users may upload their own profile pictures. Google places api is used so that when users enter their location, the latitude and longitude is extracted to put them on the search map.
 
@@ -28,5 +28,12 @@ Users can reserve spots on other users profile pages if they are logged in. The 
 ### Write references for other users
 Users can review other users as hosts or guests, and these reviews are listed as either positive or negative.
 
+### Change eras
+Although the map has a filter that let's you search specific time periods, a more fun way to navigate my site is to change
+the era on the dashboard or splash page. This changes the font, background, google map, and splash page picture for
+visitors, as well as sending the reducer an "era", so that only people from that era are loaded on the search page.
+
+![era image](docs/eraexample.png)
+
 ### Future features
-Features to add include a member search, a friends feature, the ability to send messages to other users, pagination on the location search page, a responsive design for mobile devices, different styling for different eras, and the ability to add photos other than the profile pic.
+Features to add include a member search, a friends feature, the ability to send messages to other users, pagination on the location search page, and the ability to add photos other than the profile pic.

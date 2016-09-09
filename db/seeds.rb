@@ -36,7 +36,7 @@ users = User.create([{
     username: "Time_Traveler", firstname: "H.G.", lastname: "Wells", password: "12345678",
     profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1472768594/hgwells_cgnji4.jpg",
     gender: "M", birthdate: Date.new(1866, 9, 21),
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "We should strive to welcome change and challenges, because they are what help us grow. With out them we grow weak like the Eloi in comfort and security. We need to constantly be challenging ourselves in order to strengthen our character and increase our intelligence."
   }]);
 
   sites = Site.create([{
@@ -121,7 +121,7 @@ users = User.create([{
     lastname: "of Athens",
     profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473180711/87984-004-5ADE9ACA_luvngt.jpg",
     birthdate: Date.new(-384, 10, 1), gender: "M",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "We are what we repeatedly do. Excellence, then, is not an act, but a habit. It is the mark of an educated mind to be able to entertain a thought without accepting it. What is a friend? A single soul dwelling in two bodies."
   })
 
   Site.create({
@@ -136,14 +136,14 @@ users = User.create([{
     lastname: "of Athens",
     profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473181188/75569-004-3B260631_obpsbs.jpg",
     birthdate: Date.new(-470, 7, 3), gender: "M",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "True knowledge exists in knowing that you know nothing."
   })
 
   Site.create({
     user_id: 11, lat: 37.990278, lng: 23.732143,
     start_date: Date.new(-435, 8, 7), end_date: Date.new(-399, 1, 2),
     max_guests: 100, accepting_guests: true, city: "Athens",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "By all means couchsurf: if you get a good host, you’ll become happy; if you get a bad one, you’ll become a philosopher."
   })
 
   User.create({
@@ -151,7 +151,7 @@ users = User.create([{
     lastname: "the Great",
     profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473181661/alexander-the-great_mh2xz9.jpg",
     birthdate: Date.new(-356, 7, 20), gender: "M",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "And then, Alexander wept. For there were no more couches to sleep on."
   })
 
   Site.create({
@@ -181,7 +181,7 @@ users = User.create([{
     lastname: "Barca",
     profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473182763/hannibal_barca_by_jason_zhou_01__sized_center_m_cvz5xe.jpg",
     birthdate: Date.new(-247, 5, 7), gender: "M",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description: "I will either find a place to stay, or makes one."
   })
 
   Site.create({
@@ -286,7 +286,7 @@ User.create({
   lastname: "the Gladiator",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473185227/Spartacus-by-hercxena.wikiadotcom_jr2moh.jpg",
   birthdate: Date.new(-111, 5, 30), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "I'm Spartacus!"
 })
 
 Site.create({
@@ -301,7 +301,7 @@ User.create({
   lastname: "Christ",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473185615/JesusWhite_gtkrgq.jpg",
   birthdate: Date.new(1, 12, 25), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "So I say to you, Ask and it will be given to you; search, and you will find; knock, and the door will be opened for you."
 })
 
 Site.create({
@@ -345,7 +345,7 @@ User.create({
   username: "Muhammad", password: "12345678", firstname: "Muhammad",
   lastname: "the Prophet",
   birthdate: Date.new(570, 3, 19), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Four things support the world: the learning of the wise, the justice of the great, the prayers of the good, and the valor of the brave."
 })
 
 Site.create({
@@ -360,7 +360,7 @@ User.create({
   lastname: "the Hun",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473186712/20060924_223207_atilla_lzsl2r.jpg",
   birthdate: Date.new(406, 11, 5), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Trample the weak. Hurdle the dead."
 })
 
 Site.create({
@@ -375,14 +375,13 @@ User.create({
   lastname: "Tzu",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473186997/1460086349858_krtexa.jpg",
   birthdate: Date.new(-544, 8, 7), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "The supreme art of war is to subdue the enemy without fighting."
 })
 
 Site.create({
   user_id: 27, lat: 31.300000, lng: 120.600000,
   start_date: Date.new(-522, 4, 3), end_date: Date.new(-496, 7, 12),
-  max_guests: 100, accepting_guests: true, city: "Wu",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  max_guests: 100, accepting_guests: true, city: "Wu"
 })
 
 User.create({
@@ -390,14 +389,14 @@ User.create({
   lastname: "the Philosopher",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473187217/MTE5NDg0MDU0OTMwNjg3NTAz_if3aq5.jpg",
   birthdate: Date.new(-551, 9, 28), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Wheresoever you go, go with all your heart."
 })
 
 Site.create({
   user_id: 28, lat: 35.619344, lng: 117.027841,
   start_date: Date.new(-531, 3, 8), end_date: Date.new(-479, 2, 10),
   max_guests: 100, accepting_guests: true, city: "Lu",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Behave toward everyone as if receiving a great guest."
 })
 
 User.create({
@@ -405,7 +404,8 @@ User.create({
   lastname: "Buddha",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473187643/buddh_xci3q7.jpg",
   birthdate: Date.new(-563, 10, 8), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "You will not be punished for your poor hygiene, you will be punished by your poor hygiene."
+
 })
 
 Site.create({
@@ -420,7 +420,7 @@ User.create({
   lastname: "da Vinci",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473187959/leonardo-da-vinci_nfyaif.jpg",
   birthdate: Date.new(1452, 4, 15), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Simplicity is the ultimate sophistication."
 })
 
 Site.create({
@@ -465,7 +465,7 @@ User.create({
   lastname: "of Arc",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473188902/joan-of-arc_hrl92u.jpg",
   birthdate: Date.new(1412, 1, 6), gender: "F",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "No English people"
 })
 
 Site.create({
@@ -487,7 +487,7 @@ Site.create({
   user_id: 34, lat: 52.193907, lng: -1.707989,
   start_date: Date.new(1585, 10, 15), end_date: Date.new(1616, 4, 23),
   max_guests: 100, accepting_guests: true, city: "Stratford-upon-Avon",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Better three hours too soon than a minute too late... but seriously, call if you're going to be that early."
 })
 
 User.create({
@@ -495,7 +495,7 @@ User.create({
   lastname: "Washington",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473191852/george-washington1_vphdli.jpg",
   birthdate: Date.new(1732, 2, 22), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "I'm the original couch surfer. You can't throw a stone on the eastern seaboard without hitting somewhere I slept."
 })
 
 Site.create({
@@ -540,7 +540,7 @@ User.create({
   lastname: "Franklin",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473192452/aa_franklinb_subj_e_nftfoy.jpg",
   birthdate: Date.new(1706, 1, 17), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Early to bed and early to rise makes a man healthy, wealthy, and wise."
 })
 
 Site.create({
@@ -601,7 +601,7 @@ User.create({
   lastname: "Lincoln",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473193419/MTIwNjA4NjMzODg2NTc0MDky_illeao.jpg",
   birthdate: Date.new(1809, 2, 12), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Four score and seven years ago, we will have a kickass party, conceived in awesomeness, of the people, by the people, and for the people!"
 })
 
 Site.create({
@@ -646,7 +646,7 @@ User.create({
   lastname: "Twain",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473198853/MarkTwainWb_ysejos.jpg",
   birthdate: Date.new(1835, 11, 30), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Don't go around saying the world owes you a living. The world owes you nothing. It was here first."
 })
 
 Site.create({
@@ -691,7 +691,7 @@ User.create({
   lastname: "Anthony",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199499/susan-b-anthony-320x240_yd7oqo.jpg",
   birthdate: Date.new(1820, 2, 15), gender: "F",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Why are there so few women on this site? I think the person who made this is a little sexist."
 })
 
 Site.create({
@@ -706,7 +706,7 @@ User.create({
   lastname: "Kennedy",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199731/John_F._Kennedy_48545_vypdsu.png",
   birthdate: Date.new(1917, 5, 29), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Ask not who's couch you can stay on, ask who would like to stay on your couch!"
 })
 
 Site.create({
@@ -721,7 +721,7 @@ User.create({
   lastname: "Nixon",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473199867/1000509261001_2085990537001_Bio-Biography-Richard-Nixon-SF_mtebby.jpg",
   birthdate: Date.new(1913, 1, 9), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "The people staying with me have a right to know if their host is a crook. Well, I'm not a crook."
 })
 
 Site.create({
@@ -736,7 +736,7 @@ User.create({
   lastname: "King Jr.",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200119/king_vxykdu.jpg",
   birthdate: Date.new(1929, 1, 15), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "I have a dream, that couch surfers will not be judged by the color of their skin, but by the content of their references."
 })
 
 Site.create({
@@ -796,7 +796,7 @@ User.create({
   lastname: "Bonaparte",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473200880/nepolean_bckiy0.jpg",
   birthdate: Date.new(1769, 8, 15), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Anywhere beats a steady diet of arsenic on St. Helena."
 })
 
 Site.create({
@@ -826,7 +826,7 @@ User.create({
   lastname: "Churchill",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473201378/7535-004-99D14F9B_fktok9.jpg",
   birthdate: Date.new(1874, 11, 30), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "To preserve privacy, an iron curtain will descend across the living room."
 })
 
 Site.create({
@@ -841,7 +841,7 @@ User.create({
   lastname: "Gandhi",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473201954/mahatma_gandhi_imojgt.jpg",
   birthdate: Date.new(1869, 10, 2), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "The best way to find yourself is to lose yourself in the service of others."
 })
 
 Site.create({
@@ -856,7 +856,7 @@ User.create({
   lastname: "Mandela",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202245/75567-004-6585DB51_ccgr3s.jpg",
   birthdate: Date.new(1918, 7, 18), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "There is nothing like returning to a place that remains unchanged to find the ways in which you yourself have altered."
 })
 
 Site.create({
@@ -871,7 +871,7 @@ User.create({
   lastname: "Stalin",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202486/MTE5NTU2MzE2Mzc0NDY4MTA3_uenhlk.jpg",
   birthdate: Date.new(1878, 12, 18), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Gratitude is a sickness suffered by dogs."
 })
 
 Site.create({
@@ -901,7 +901,7 @@ User.create({
   lastname: "the Terrible",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473202955/MTE1ODA0OTcxNjY5NjIwMjM3_omzj2p.jpg",
   birthdate: Date.new(1530, 9, 3), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "I'm going to be honest. You shouldn't stay with me."
 })
 
 Site.create({
@@ -916,7 +916,7 @@ User.create({
   lastname: "the Impaler",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204135/Vlad-the-Impaler_yflxuc.jpg",
   birthdate: Date.new(1431, 11, 15), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "I'm a pretty normal guy, but I do one weird thing. I occasionally impale people on huge wooden stakes."
 })
 
 Site.create({
@@ -946,7 +946,7 @@ User.create({
   lastname: "Deckard",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204696/latest_uvoa1f.jpg",
   birthdate: Date.new(2018, 3, 19), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "For some reason, this site only is letting me accept guests for four years. Weird."
 })
 
 Site.create({
@@ -961,7 +961,7 @@ User.create({
   lastname: "Picard",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473204855/300px-Jean-Luc_Picard_k0nrgf.jpg",
   birthdate: Date.new(2305, 7, 13), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "You want to stay with me? Make it so. Engage."
 })
 
 Site.create({
@@ -1006,14 +1006,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 69, lat: 42.752201, lng: -120.119654,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1021,14 +1021,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 70, lat: 29.617813, lng: -98.059114,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1036,14 +1036,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 71, lat: 40.251385, lng: -76.086459,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1051,14 +1051,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 72, lat: -11.085231, lng: -45.148961,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1066,14 +1066,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 73, lat: 39.033208, lng: -3.840365,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1081,14 +1081,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 74, lat: 13.844942, lng: 3.015103,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1096,14 +1096,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 75, lat: 44.407440, lng: 66.472131,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1111,14 +1111,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 76, lat: 14.186037, lng: 102.683074,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1126,14 +1126,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 77, lat: 39.441650, lng: 141.354947,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1141,14 +1141,14 @@ User.create({
   lastname: "Undead",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473205653/maxresdefault_pamjux.jpg",
   birthdate: Date.new(2450, 1, 1), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 Site.create({
   user_id: 78, lat: -29.758242, lng: 140.651822,
   start_date: Date.new(2450, 1, 1), end_date: Date.new(3000, 12, 31),
   max_guests: 100, accepting_guests: true, city: "Everywhere",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "UUUURRRRRRRRRGGGHGHGGGHGHGHGHGHGGHGHHHHHHH"
 })
 
 User.create({
@@ -1171,7 +1171,7 @@ User.create({
   lastname: "Columbus",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473206473/1519-christopher-columbus-01-200x273_flip_svpqsf.jpg",
   birthdate: Date.new(1450, 10, 31), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "You guys don't mind if I just invite myself over, right?"
 })
 
 Site.create({
@@ -1276,7 +1276,7 @@ User.create({
   lastname: "Guevara",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473281709/Che_qqtyuf.jpg",
   birthdate: Date.new(1928, 6, 14), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "Feel free to stay at my place. I'm a big commie, so what's mine is yours."
 })
 
 Site.create({
@@ -1321,7 +1321,7 @@ User.create({
   lastname: "Wallace",
   profile: "http://res.cloudinary.com/dush6wf6z/image/upload/v1473356947/maxresdefault_qzl2gd.jpg",
   birthdate: Date.new(1270, 3, 5), gender: "M",
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  description: "They may take our lives, but they'll never take... OUR COUCHES!"
 })
 
 Site.create({

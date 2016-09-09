@@ -146,7 +146,7 @@ class Splash extends React.Component {
                 in Hill Valley, 1955
               </p>
               <div className="testimonial-line"></div>
-              <p className="testimonial-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="testimonial-description">I stayed with Doc for a week in 1955 and another time in 1885. It was heavy, I had to make sure my parents got together or I wouldn't have been born. But Doc is great, he has a lot of cool things in his house like a gigantic amplifier and a flying, time traveling DeLorean. The only problem is that every time I visit, I have a really tough time getting back to 1985. Actually, it was a little weird staying with him, I accidentally kissed my mother and wrote the song Johnny Be Good.</p>
             </aside>
           </article>
           <article className="testimonial2 testimonial  group">
@@ -169,7 +169,7 @@ class Splash extends React.Component {
                 in San Dimas, 1989
               </p>
               <div className="testimonial-line"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Dude! Me and my most esteemed colleague, Ted, went on a most excellent adventure through all of history. We met some of the greatest leaders who ever lived, like Genghis Khan, Joan of Arc, and Socratic Method. We also let Napoleon stay at our house, but he was a most heinous guest. We traveled through time, met a lot of great leaders, and got an A on our history report. Excellent!</p>
             </aside>
             <figure className="figure-right figure">
               <figcaption className="testimonial-caption">
