@@ -182,7 +182,7 @@ body {
   }
 
   .nav-buttons {
-    display:none;
+    display: none;
   }
 
 
@@ -220,6 +220,8 @@ body {
     border-left: 1px solid #afb8c3;
     width: 150px;
     box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+
   }
 
   .nav-buttons-resp li {
@@ -256,6 +258,7 @@ body {
     background-color: white;
     margin: 0 auto;
     top: 60px;
+    right: 0;
     width: 100%;
     border-bottom: 1px solid #afb8c3;
     padding-bottom: 5px;

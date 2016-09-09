@@ -1348,5 +1348,5 @@ Site.create({
 
 
   1000.times do
-    Reference.create({author_id: rand(86) + 1, subject_id: rand(86) + 1, recommended: (rand(2) == 1 ? true : false), body: Faker::Lorem.paragraph, created_at: Date.new(rand(2016) + 1, rand(12) + 1, rand(27) + 1)})
+    Reference.create({author_id: rand(90) + 1, subject_id: rand(90) + 1, recommended: (rand(2) == 1 ? true : false), body: Faker::Lorem.paragraph, created_at: Date.new(rand(2016) + 1, rand(12) + 1, rand(27) + 1)})
   end
