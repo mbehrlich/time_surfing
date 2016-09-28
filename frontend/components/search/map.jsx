@@ -172,6 +172,7 @@ class Map extends React.Component {
       let sw = {lat: bounds.getSouthWest().lat(), lng: bounds.getSouthWest().lng()};
       bounds = {northEast: ne, southWest: sw};
       this.props.updateBounds(bounds);
+
     });
   }
 

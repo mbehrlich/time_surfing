@@ -68,7 +68,7 @@ class Root extends React.Component {
       <Provider store={this.props.store}>
         <div>
           <NavbarContainer />
-          <Router history={ hashHistory }>
+          <Router onUpdate={() => window.scrollTo(0, 0)} history={ hashHistory }>
             <Route path="/" component={SplashContainer} onEnter={this.ensureNotLogin} >
               <Route path="/login" component={LoginContainer} onEnter={this.ensureNotLogin} />
               <Route path="/join" component={JoinContainer} onEnter={this.ensureNotLogin} />
